@@ -12546,6 +12546,7 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100% !important;
 	height: 15% !important;
 	border: 1px dotted black;
+	background-color: blue;
 }
 
 .mytheme .top-panel-button {
