@@ -14,6 +14,7 @@ public class Variant {
 
     @XmlAttribute(name="id")
     private String id;
+
     private String framenetID;
 
     public String getId() {

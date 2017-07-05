@@ -57,7 +57,7 @@ public class Entry {
         for (HumanSentence sent : getHumanLayer().getHumanSentences()){
             Head head = sent.getHead();
             out += "S" + i + ": " + head.getTextRepresentation();
-            for (Variant var : head.getVariants().getVariants()){
+            for (Variant var : head.getVariants()){
                 out += " " + var.getId();
             }
             out += "\n";
