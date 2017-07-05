@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dictionary>
+    <entry xml:id="wal_18752-ent">
+        <orth>abdykować</orth>
+        <pos>verb</pos>
+        <status>(S) sprawdzone</status>
+        <human_layer>
+            <human_sentence>
+                <head nr="2">
+                    <text_rep>abdykować</text_rep>
+                    <aspect>_</aspect>
+                    <inherent_sie>false</inherent_sie>
+                    <negativity>_</negativity>
+                    <variants>
+                        <var id="1" framenetId="xxx"/>
+                    </variants>
+                </head>
+                <syntactic_opinion>todo</syntactic_opinion>
+                <semantic_opinion>todo</semantic_opinion>
+                <positions org="list">
+                    <position nr="0" id="wal_18752.14855.1-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="np" id="wal_18752.14855.1.0-inst">
+                                <text_rep>osoba</text_rep>
+                                <phrase_id>wal_18752.14855.1.1-phr</phrase_id>
+                                <phrase_function>subj</phrase_function>
+                                <phrase_attributes>
+                                    <case>str</case>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.129-arg</argument_id>
+                                <representations org="set">
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">osoba</representation>
+                                    </synset_representations>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                    <position nr="1" id="wal_18752.14855.43-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="prepnp" id="wal_18752.14855.43.0-inst">
+                                <text_rep>z ~ pracy/z ~ uprawnienia</text_rep>
+                                <phrase_id>wal_18752.14855.43.36-phr</phrase_id>
+                                <phrase_function>_</phrase_function>
+                                <phrase_attributes>
+                                    <case>gen</case>
+                                    <preposition>z</preposition>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.130-arg</argument_id>
+                                <representations org="set">
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">praca</representation>
+                                    </synset_representations>
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">uprawnienie</representation>
+                                    </synset_representations>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                    <position nr="2" id="wal_18752.14855.681-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="comprepnp" id="wal_18752.14855.681.0-inst">
+                                <text_rep>na rzecz ~ kogoś/na rzecz ~ instytucji</text_rep>
+                                <phrase_id>wal_18752.14855.681.340-phr</phrase_id>
+                                <phrase_function>_</phrase_function>
+                                <phrase_attributes>
+                                    <expansions>#wal_340-exp</expansions>
+                                    <complex_preposition>na rzecz</complex_preposition>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.131-arg</argument_id>
+                                <representations org="set">
+                                    <representation type="predef">ktoś/instytucja</representation>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                </positions>
+            </human_sentence>
+            <human_sentence>
+                <head nr="2">
+                    <text_rep>abdykować</text_rep>
+                    <aspect>_</aspect>
+                    <inherent_sie>false</inherent_sie>
+                    <negativity>_</negativity>
+                    <variants>
+                        <var id="1" framenetId="xxx"/>
+                    </variants>
+                </head>
+                <syntactic_opinion>todo</syntactic_opinion>
+                <semantic_opinion>todo</semantic_opinion>
+                <positions org="list">
+                    <position nr="0" id="wal_18752.14854.1-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="np" id="wal_18752.14854.1.0-inst">
+                                <text_rep>osoba</text_rep>
+                                <phrase_id>wal_18752.14854.1.1-phr</phrase_id>
+                                <phrase_function>subj</phrase_function>
+                                <phrase_attributes>
+                                    <case>str</case>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.129-arg</argument_id>
+                                <representations org="set">
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">osoba</representation>
+                                    </synset_representations>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                    <position nr="1" id="wal_18752.14854.601-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="xp" id="wal_18752.14854.601.0-inst">
+                                <text_rep>skądś</text_rep>
+                                <phrase_id>wal_18752.14854.601.132-phr</phrase_id>
+                                <phrase_function>_</phrase_function>
+                                <phrase_attributes>
+                                    <expansions>#wal_132-exp</expansions>
+                                    <category>abl</category>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.130-arg</argument_id>
+                                <representations org="set">
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">praca</representation>
+                                    </synset_representations>
+                                    <synset_representations org="set">
+                                        <representation type="lexical_unit">uprawnienie</representation>
+                                    </synset_representations>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                    <position nr="2" id="wal_18752.14854.681-psn">
+                        <human_instances org="list">
+                            <human_instance nr="0" type="comprepnp" id="wal_18752.14854.681.0-inst">
+                                <text_rep>na rzecz ~ kogoś/na rzecz ~ instytucji</text_rep>
+                                <phrase_id>wal_18752.14854.681.340-phr</phrase_id>
+                                <phrase_function>_</phrase_function>
+                                <phrase_attributes>
+                                    <expansions>#wal_340-exp</expansions>
+                                    <complex_preposition>na rzecz</complex_preposition>
+                                </phrase_attributes>
+                                <argument_id>wal_18752.52.131-arg</argument_id>
+                                <representations org="set">
+                                    <representation type="predef">ktoś/instytucja</representation>
+                                </representations>
+                            </human_instance>
+                        </human_instances>
+                    </position>
+                </positions>
+            </human_sentence>
+        </human_layer>
+    </entry>
+    <entry xml:id="wal_10558-ent">
+    <orth>adresować</orth>
+    <pos>verb</pos>
+    <status>(S) sprawdzone</status>
+    <human_layer>
+        <human_sentence>
+            <head nr="2">
+                <text_rep>adresować</text_rep>
+                <aspect>imperf</aspect>
+                <inherent_sie>false</inherent_sie>
+                <negativity>_</negativity>
+                <variants>
+                    <var id="1" framenetId="xxx"/>
+                </variants>
+            </head>
+            <syntactic_opinion>todo</syntactic_opinion>
+            <semantic_opinion>todo</semantic_opinion>
+            <positions org="list">
+                <position nr="0" id="wal_10558.70.1-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.70.1.0-inst">
+                            <text_rep>ktoś/instytucja</text_rep>
+                            <phrase_id>wal_10558.70.1.1-phr</phrase_id>
+                            <phrase_function>subj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84843-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="1" id="wal_10558.70.2-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.70.2.0-inst">
+                            <text_rep>przedmiot</text_rep>
+                            <phrase_id>wal_10558.70.2.1-phr</phrase_id>
+                            <phrase_function>obj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84844-arg</argument_id>
+                            <representations org="set">
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">przedmiot</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="2" id="wal_10558.70.31-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="prepnp" id="wal_10558.70.31.0-inst">
+                            <text_rep>na ~ kogoś/na ~ instytucję/na ~ jednostkę/na ~ obszar</text_rep>
+                            <phrase_id>wal_10558.70.31.26-phr</phrase_id>
+                            <phrase_function>_</phrase_function>
+                            <phrase_attributes>
+                                <case>acc</case>
+                                <preposition>na</preposition>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84845-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">jednostka</representation>
+                                </synset_representations>
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">obszar</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+            </positions>
+        </human_sentence>
+        <human_sentence>
+            <head nr="2">
+                <text_rep>adresować</text_rep>
+                <aspect>imperf</aspect>
+                <inherent_sie>false</inherent_sie>
+                <negativity>_</negativity>
+                <variants>
+                    <var id="1" framenetId="xxx"/>
+                </variants>
+            </head>
+            <syntactic_opinion>todo</syntactic_opinion>
+            <semantic_opinion>todo</semantic_opinion>
+            <positions org="list">
+                <position nr="0" id="wal_10558.1.1-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.1.1.0-inst">
+                            <text_rep>ktoś/instytucja</text_rep>
+                            <phrase_id>wal_10558.1.1.1-phr</phrase_id>
+                            <phrase_function>subj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84843-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="1" id="wal_10558.1.2-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.1.2.0-inst">
+                            <text_rep>przedmiot</text_rep>
+                            <phrase_id>wal_10558.1.2.1-phr</phrase_id>
+                            <phrase_function>obj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84844-arg</argument_id>
+                            <representations org="set">
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">przedmiot</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="2" id="wal_10558.1.3-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="prepnp" id="wal_10558.1.3.0-inst">
+                            <text_rep>do ~ kogoś/do ~ instytucji/do ~ jednostki/do ~ obszaru</text_rep>
+                            <phrase_id>wal_10558.1.3.2-phr</phrase_id>
+                            <phrase_function>_</phrase_function>
+                            <phrase_attributes>
+                                <case>gen</case>
+                                <preposition>do</preposition>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60390.84845-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">jednostka</representation>
+                                </synset_representations>
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">obszar</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+            </positions>
+        </human_sentence>
+        <human_sentence>
+            <head nr="2">
+                <text_rep>adresować</text_rep>
+                <aspect>imperf</aspect>
+                <inherent_sie>false</inherent_sie>
+                <negativity>_</negativity>
+                <variants>
+                    <var id="2" framenetId="xxx"/>
+                </variants>
+            </head>
+            <syntactic_opinion>todo</syntactic_opinion>
+            <semantic_opinion>todo</semantic_opinion>
+            <positions org="list">
+                <position nr="0" id="wal_10558.1.1-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.1.1.0-inst">
+                            <text_rep>ktoś/instytucja</text_rep>
+                            <phrase_id>wal_10558.1.1.1-phr</phrase_id>
+                            <phrase_function>subj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60416.84840-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="1" id="wal_10558.1.2-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_10558.1.2.0-inst">
+                            <text_rep>treść/koncepcję</text_rep>
+                            <phrase_id>wal_10558.1.2.1-phr</phrase_id>
+                            <phrase_function>obj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60416.84841-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">treść</representation>
+                                <representation type="predef">koncepcja</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="2" id="wal_10558.1.3-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="prepnp" id="wal_10558.1.3.0-inst">
+                            <text_rep>do ~ kogoś/do ~ instytucji</text_rep>
+                            <phrase_id>wal_10558.1.3.2-phr</phrase_id>
+                            <phrase_function>_</phrase_function>
+                            <phrase_attributes>
+                                <case>gen</case>
+                                <preposition>do</preposition>
+                            </phrase_attributes>
+                            <argument_id>wal_10558.60416.84842-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś/instytucja</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+            </positions>
+        </human_sentence>
+    </human_layer>
+    </entry>
+    <entry xml:id="wal_4212-ent">
+    <orth>chrząkać</orth>
+    <pos>verb</pos>
+    <status>(S) sprawdzone</status>
+    <human_layer>
+        <human_sentence>
+            <head nr="2">
+                <text_rep>chrząkać</text_rep>
+                <aspect>imperf</aspect>
+                <inherent_sie>false</inherent_sie>
+                <negativity>_</negativity>
+                <variants>
+                    <var id="1" framenetId="xxx"/>
+                </variants>
+            </head>
+            <syntactic_opinion>todo</syntactic_opinion>
+            <semantic_opinion>todo</semantic_opinion>
+            <positions org="list">
+                <position nr="0" id="wal_4212.35180.1-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_4212.35180.1.0-inst">
+                            <text_rep>ktoś</text_rep>
+                            <phrase_id>wal_4212.35180.1.1-phr</phrase_id>
+                            <phrase_function>subj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_4212.11350.17319-arg</argument_id>
+                            <representations org="set">
+                                <representation type="predef">ktoś</representation>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+                <position nr="1" id="wal_4212.35180.8688-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="xp" id="wal_4212.35180.8688.0-inst">
+                            <text_rep>z jakiegoś powodu</text_rep>
+                            <phrase_id>wal_4212.35180.8688.8048-phr</phrase_id>
+                            <phrase_function>_</phrase_function>
+                            <phrase_attributes>
+                                <expansions>#wal_8048-exp</expansions>
+                                <category>caus</category>
+                            </phrase_attributes>
+                            <argument_id>wal_4212.11350.17451-arg</argument_id>
+                            <representations org="set">
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">miłość</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+            </positions>
+        </human_sentence>
+        <human_sentence>
+            <head nr="2">
+                <text_rep>chrząkać</text_rep>
+                <aspect>imperf</aspect>
+                <inherent_sie>false</inherent_sie>
+                <negativity>_</negativity>
+                <variants>
+                    <var id="2" framenetId="xxx"/>
+                </variants>
+            </head>
+            <syntactic_opinion>todo</syntactic_opinion>
+            <semantic_opinion>todo</semantic_opinion>
+            <positions org="list">
+                <position nr="0" id="wal_4212.35180.1-psn">
+                    <human_instances org="list">
+                        <human_instance nr="0" type="np" id="wal_4212.35180.1.0-inst">
+                            <text_rep>ssak</text_rep>
+                            <phrase_id>wal_4212.35180.1.1-phr</phrase_id>
+                            <phrase_function>subj</phrase_function>
+                            <phrase_attributes>
+                                <case>str</case>
+                            </phrase_attributes>
+                            <argument_id>wal_4212.11352.17325-arg</argument_id>
+                            <representations org="set">
+                                <synset_representations org="set">
+                                    <representation type="lexical_unit">ssak</representation>
+                                </synset_representations>
+                            </representations>
+                        </human_instance>
+                    </human_instances>
+                </position>
+            </positions>
+        </human_sentence>
+    </human_layer>
+    </entry>
+</dictionary>

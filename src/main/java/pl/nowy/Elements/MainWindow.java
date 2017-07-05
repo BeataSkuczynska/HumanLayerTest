@@ -72,10 +72,11 @@ public class MainWindow extends VerticalLayout {
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
 
 
-        Dictionary dic = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/test.xml"));
+        Dictionary dic = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
         for (Entry entry : dic.getEntries()){
-            System.out.println(entry);
-            System.out.println(entry.getHumanLayer());
+            //System.out.println(entry);
+            //System.out.println(entry.getHumanLayer());
+            System.out.println(entry.prettyPrint());
         }
     }
 
