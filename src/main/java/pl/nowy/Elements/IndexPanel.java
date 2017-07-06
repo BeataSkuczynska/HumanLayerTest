@@ -17,6 +17,21 @@ public class IndexPanel extends VerticalLayout {
     private HorizontalLayout headPanel;
     private Grid<Entry> grid;
 
+    public HorizontalLayout getHeadPanel() {
+        return headPanel;
+    }
+
+    public void setHeadPanel(HorizontalLayout headPanel) {
+        this.headPanel = headPanel;
+    }
+
+    public Grid<Entry> getGrid() {
+        return grid;
+    }
+
+    public void setGrid(Grid<Entry> grid) {
+        this.grid = grid;
+    }
 
     public IndexPanel() { init();}
 
@@ -26,8 +41,6 @@ public class IndexPanel extends VerticalLayout {
         grid.addStyleName("index");
         addStyleName("index-panel");
         grid.setSelectionMode(Grid.SelectionMode.SINGLE);
-        grid.addItemClickListener(event ->
-                Notification.show("Value: " + event.getItem().prettyPrint()));
     }
 
     public void updateGrid(List<Entry> entryList) {

@@ -13,7 +13,7 @@ public class EntryWindowFactory {
 
 
 
-    public VerticalLayout createEntryWindow(Entry entry){
+    public static VerticalLayout createEntryWindow(Entry entry){
         VerticalLayout entryWindow = new VerticalLayout();
         entryWindow.addStyleName("entryOld");
         Label label = new Label(entry.getOrth());

@@ -1,5 +1,6 @@
 package pl.nowy.Elements;
 
+import com.vaadin.shared.EventId;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
@@ -20,7 +21,7 @@ public class MainWindow extends VerticalLayout {
     private HorizontalLayout mainPanel;
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
-    private VerticalLayout entryWindow;
+    private HorizontalLayout entryWindow;
 
     private static Dictionary WalentyHumanLayer;
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
@@ -41,8 +42,9 @@ public class MainWindow extends VerticalLayout {
 
 
 
-        //EntryOld entryOld = tempFactory.createEntry();
-        //entryWindow = factory.createEntryWindow(entryOld);
+
+        entryWindow = new HorizontalLayout();
+        mainPanel.addComponent(entryWindow);
         //entryWindow.setSizeFull();
 
 
@@ -50,8 +52,10 @@ public class MainWindow extends VerticalLayout {
         indexPanel.setSizeFull();
 
         indexPanel.updateGrid(WalentyHumanLayer.getEntries());
+        indexPanel.getGrid().addItemClickListener(event ->
+                changeEntryWindow(event.getItem()));
 
-//        mainPanel.addComponent(entryWindow);
+
         mainPanel.addComponent(indexPanel);
 
         addComponent(topPanel);
@@ -84,6 +88,11 @@ public class MainWindow extends VerticalLayout {
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
         WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
 
+    }
+
+    public void changeEntryWindow(Entry entry){
+        entryWindow.removeAllComponents();
+        entryWindow.addComponent(EntryWindowFactory.createEntryWindow(entry));
     }
 
 
