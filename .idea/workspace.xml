@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eefc2d1c-3514-488c-a26a-85d722982c13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanPhrase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanPosition.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanPhrase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanPosition.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPhrase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPosition.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/EntryOld.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Meaning.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Phrase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Schema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/TemporaryEntryFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/Elements/EntryWindowFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/Elements/IndexPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/Elements/MainWindow.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/EntryVariant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanSentence.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Variants.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/Temporary/EntryOld.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/Temporary/Meaning.class" afterPath="" />
@@ -28,18 +12,16 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/test.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/EntryVariant.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Variants.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Entry.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Entry.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanSentence.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanSentence.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/Temporary/EntryOld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/Temporary/Meaning.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/Temporary/Phrase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/Temporary/Schema.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/Temporary/TemporaryEntryFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/test.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Entry.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/data.xml" afterPath="$PROJECT_DIR$/src/main/resources/data.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/data.xml" afterPath="$PROJECT_DIR$/target/classes/data.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/data.xml" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,11 +35,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="47" column="2" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+            <state relative-caret-position="276">
+              <caret line="51" column="60" lean-forward="false" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,12 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="28" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="435">
+              <caret line="29" column="60" lean-forward="false" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,9 +122,11 @@
       <file leaf-file-name="EntryWindowFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="-117">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Meaning.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Schema.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/TemporaryEntryFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java" />
         <option value="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/VAADIN/themes/mytheme/mytheme.scss" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Phrase.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/topPanel.java" />
@@ -231,9 +226,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPhrase.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java" />
       </list>
     </option>
   </component>
@@ -1204,12 +1200,12 @@
       <workItem from="1498928194334" duration="146000" />
       <workItem from="1499008649248" duration="447000" />
       <workItem from="1499264917664" duration="7796000" />
-      <workItem from="1499331340844" duration="230000" />
+      <workItem from="1499331340844" duration="1240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45986000" />
+    <option name="totallyTimeSpent" value="46996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="6" />
@@ -1223,10 +1219,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17986111" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31206658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31206658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1398,13 +1394,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/product.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Product.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -1515,14 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
@@ -1547,22 +1528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="28" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/ui/AbstractComponentContainer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1571,10 +1536,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/EntryWindowFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="47" column="2" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+        <state relative-caret-position="276">
+          <caret line="51" column="60" lean-forward="false" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/Elements/IndexPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="60" lean-forward="false" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

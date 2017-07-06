@@ -21,9 +21,13 @@ public class MainWindow extends VerticalLayout {
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
     private VerticalLayout entryWindow;
+
+    private static Dictionary WalentyHumanLayer;
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
 
-    public MainWindow() {
+    public MainWindow() throws JAXBException {
+
+        populateDictionary();
         setSizeFull();
         setMargin(new MarginInfo(false, true, true, true));
         topPanel = new TopPanel();
@@ -44,6 +48,8 @@ public class MainWindow extends VerticalLayout {
 
         indexPanel = new IndexPanel();
         indexPanel.setSizeFull();
+
+        indexPanel.updateGrid(WalentyHumanLayer.getEntries());
 
 //        mainPanel.addComponent(entryWindow);
         mainPanel.addComponent(indexPanel);
@@ -66,16 +72,18 @@ public class MainWindow extends VerticalLayout {
 
     public void testJAXB() throws JAXBException {
 
-        JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
-        Unmarshaller unmarshaller = ctx.createUnmarshaller();
-
-
-        Dictionary dic = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
-        for (Entry entry : dic.getEntries()){
+        for (Entry entry : WalentyHumanLayer.getEntries()){
             //System.out.println(entry);
             //System.out.println(entry.getHumanLayer());
             System.out.println(entry.prettyPrint());
         }
+    }
+
+    public void populateDictionary() throws JAXBException {
+        JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
+        Unmarshaller unmarshaller = ctx.createUnmarshaller();
+        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
+
     }
 
 

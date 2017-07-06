@@ -1,6 +1,9 @@
 package pl.nowy.Elements;
 
 import com.vaadin.ui.*;
+import pl.nowy.HumanElements.Entry;
+
+import java.util.List;
 
 
 /**
@@ -9,23 +12,21 @@ import com.vaadin.ui.*;
 public class IndexPanel extends VerticalLayout {
 
     private HorizontalLayout headPanel;
-    //private Grid<EntryOld> grid;
+    private Grid<Entry> grid;
 
 
     public IndexPanel() { init();}
 
     private void init(){
-//        grid = new Grid<>();
-//        addComponent(grid);
-//        updateGrid();
-//        grid.addStyleName("index");
-//        addStyleName("index-panel");
+        grid = new Grid<>();
+        addComponent(grid);
+        grid.addStyleName("index");
+        addStyleName("index-panel");
     }
 
-    public void updateGrid(){
-//        TemporaryEntryFactory factory = new TemporaryEntryFactory();
-//        EntryOld entryOld = factory.createEntry();
-//        grid.setItems(entryOld);
-//        grid.addColumn(EntryOld::getRepresentation).setCaption("Name");
+    public void updateGrid(List<Entry> entryList) {
+        grid.setItems(entryList);
+        grid.addColumn(Entry::getOrth).setCaption("Leksem");
+        grid.addColumn(Entry::getPos).setCaption("Część mowy");
     }
 }
