@@ -48,4 +48,11 @@ public class HumanSentence {
         }
         return out;
     }
+
+    public String makeSentence(){
+        String out = "";
+        out += positions.get(0).getPhrases().get(0).getTextRepresentation();
+        out += head.getTextRepresentation();
+        return out;
+    }
 }

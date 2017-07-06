@@ -2,6 +2,9 @@ package pl.nowy.Elements;
 
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Entry;
+import pl.nowy.HumanElements.HumanPhrase;
+import pl.nowy.HumanElements.HumanPosition;
+import pl.nowy.HumanElements.HumanSentence;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,49 +18,30 @@ public class EntryWindowFactory {
 
     public static VerticalLayout createEntryWindow(Entry entry){
         VerticalLayout entryWindow = new VerticalLayout();
-        entryWindow.addStyleName("entryOld");
+        entryWindow.addStyleName("entry");
         Label label = new Label(entry.getOrth());
+        Label allLabel = new Label(entry.prettyPrint());
         entryWindow.addComponent(label);
+        entryWindow.addComponent(allLabel);
+        for (HumanSentence sent : entry.getHumanLayer().getHumanSentences()){
+            HorizontalLayout sentenceFrame = createSentenceFrame(sent);
+            entryWindow.addComponent(sentenceFrame);
+        }
         return entryWindow;
     }
 
 
-//    public VerticalLayout createEntryWindow(EntryOld entryOld){
-//        VerticalLayout entryWindow = new VerticalLayout();
-//        entryWindow.addStyleName("entryOld");
-//        Label label = new Label(entryOld.getRepresentation());
-//        entryWindow.addComponent(label);
-//        for (Meaning meaning : entryOld.getMeanings()){
-//            VerticalLayout meaningLayout = new VerticalLayout();
-//            Label meaningLabel = new Label(entryOld.getRepresentation());
-//            meaningLayout.addComponent(meaningLabel);
-//            meaningLabel.setSizeFull();
-//            meaningLayout.addStyleName("meaning");
-//            List<Component> reprList = new ArrayList<>();
-//            for (Schema schema: meaning.getSchemas()){
-//                Label test = new Label("test");
-//                Component schemaRepr = createSchemaRepresentation(schema);
-//                reprList.add(schemaRepr);
-//                meaningLayout.addComponent(test);
-//            }
-//            for (Component comp: reprList){
-//                //meaningLayout.addComponent(comp);
-//                System.out.println(comp.getId());
-//            }
-//            entryWindow.addComponent(meaningLayout);
-//            System.out.println(reprList.size());
-//        }
-//        return entryWindow;
-//    }
-//
-//    public HorizontalLayout createSchemaRepresentation(Schema schema){
-//        HorizontalLayout frame = new HorizontalLayout();
-//        frame.addStyleName("form");
-//        System.out.println("pharase");
-//        for (Phrase phrase: schema.getPhrases()){
-//            Label phraseLabel = new Label(phrase.getSemanticInfo());
-//            frame.addComponent(phraseLabel);
-//        }
-//        return frame;
-//    }
+
+    public static HorizontalLayout createSentenceFrame(HumanSentence sentence){
+        HorizontalLayout sentenceFrame = new HorizontalLayout();
+        for (HumanPosition position : sentence.getPositions()){
+            HumanPhrase phrase = position.getPhrases().get(0);
+            HorizontalLayout phraseFrame = new HorizontalLayout();
+            Label phraseLabel = new Label(phrase.getTextRepresentation());
+            phraseFrame.addComponent(phraseLabel);
+            phraseFrame.addStyleName("form");
+            sentenceFrame.addComponent(phraseFrame);
+        }
+        return sentenceFrame;
+    }
 }
