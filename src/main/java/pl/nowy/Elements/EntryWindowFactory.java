@@ -1,6 +1,7 @@
 package pl.nowy.Elements;
 
 import com.vaadin.ui.*;
+import pl.nowy.HumanElements.Entry;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +10,17 @@ import java.util.List;
  * Created by Kasia on 14.06.2017.
  */
 public class EntryWindowFactory {
+
+
+
+    public VerticalLayout createEntryWindow(Entry entry){
+        VerticalLayout entryWindow = new VerticalLayout();
+        entryWindow.addStyleName("entryOld");
+        Label label = new Label(entry.getOrth());
+        entryWindow.addComponent(label);
+        return entryWindow;
+    }
+
 
 //    public VerticalLayout createEntryWindow(EntryOld entryOld){
 //        VerticalLayout entryWindow = new VerticalLayout();

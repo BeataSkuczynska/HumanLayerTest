@@ -1,9 +1,12 @@
 package pl.nowy.Elements;
 
+import com.vaadin.event.selection.SelectionEvent;
+import com.vaadin.event.selection.SelectionListener;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Entry;
 
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -22,6 +25,9 @@ public class IndexPanel extends VerticalLayout {
         addComponent(grid);
         grid.addStyleName("index");
         addStyleName("index-panel");
+        grid.setSelectionMode(Grid.SelectionMode.SINGLE);
+        grid.addItemClickListener(event ->
+                Notification.show("Value: " + event.getItem().prettyPrint()));
     }
 
     public void updateGrid(List<Entry> entryList) {
@@ -29,4 +35,6 @@ public class IndexPanel extends VerticalLayout {
         grid.addColumn(Entry::getOrth).setCaption("Leksem");
         grid.addColumn(Entry::getPos).setCaption("Część mowy");
     }
+
+
 }

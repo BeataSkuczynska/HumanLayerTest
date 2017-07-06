@@ -28,7 +28,7 @@ public class MainWindow extends VerticalLayout {
     public MainWindow() throws JAXBException {
 
         populateDictionary();
-        setSizeFull();
+        //setSizeFull();
         setMargin(new MarginInfo(false, true, true, true));
         topPanel = new TopPanel();
         topPanel.setSizeFull();

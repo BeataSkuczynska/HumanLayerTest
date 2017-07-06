@@ -53,6 +53,7 @@ public class Entry {
         out += "Entry [orth=" + orth + ", pos=" + pos + "]";
         out += "\n";
         out += "Nr of sentences: " + getHumanLayer().getHumanSentences().size() + "\n";
+        out += "\n";
         int i = 1;
         for (HumanSentence sent : getHumanLayer().getHumanSentences()){
             Head head = sent.getHead();
