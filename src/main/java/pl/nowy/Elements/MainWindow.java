@@ -4,8 +4,6 @@ import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
-import pl.nowy.Temporary.EntryOld;
-import pl.nowy.Temporary.TemporaryEntryFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -23,7 +21,7 @@ public class MainWindow extends VerticalLayout {
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
     private VerticalLayout entryWindow;
-    private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
+    //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
 
     public MainWindow() {
         setSizeFull();
@@ -39,15 +37,15 @@ public class MainWindow extends VerticalLayout {
 
 
 
-        EntryOld entryOld = tempFactory.createEntry();
-        entryWindow = factory.createEntryWindow(entryOld);
-        entryWindow.setSizeFull();
+        //EntryOld entryOld = tempFactory.createEntry();
+        //entryWindow = factory.createEntryWindow(entryOld);
+        //entryWindow.setSizeFull();
 
 
         indexPanel = new IndexPanel();
         indexPanel.setSizeFull();
 
-        mainPanel.addComponent(entryWindow);
+//        mainPanel.addComponent(entryWindow);
         mainPanel.addComponent(indexPanel);
 
         addComponent(topPanel);

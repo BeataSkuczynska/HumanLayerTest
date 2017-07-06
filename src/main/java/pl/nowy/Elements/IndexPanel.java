@@ -1,8 +1,7 @@
 package pl.nowy.Elements;
 
 import com.vaadin.ui.*;
-import pl.nowy.Temporary.EntryOld;
-import pl.nowy.Temporary.TemporaryEntryFactory;
+
 
 /**
  * Created by Kasia on 14.06.2017.
@@ -10,23 +9,23 @@ import pl.nowy.Temporary.TemporaryEntryFactory;
 public class IndexPanel extends VerticalLayout {
 
     private HorizontalLayout headPanel;
-    private Grid<EntryOld> grid;
+    //private Grid<EntryOld> grid;
 
 
     public IndexPanel() { init();}
 
     private void init(){
-        grid = new Grid<>();
-        addComponent(grid);
-        updateGrid();
-        grid.addStyleName("index");
-        addStyleName("index-panel");
+//        grid = new Grid<>();
+//        addComponent(grid);
+//        updateGrid();
+//        grid.addStyleName("index");
+//        addStyleName("index-panel");
     }
 
     public void updateGrid(){
-        TemporaryEntryFactory factory = new TemporaryEntryFactory();
-        EntryOld entryOld = factory.createEntry();
-        grid.setItems(entryOld);
-        grid.addColumn(EntryOld::getRepresentation).setCaption("Name");
+//        TemporaryEntryFactory factory = new TemporaryEntryFactory();
+//        EntryOld entryOld = factory.createEntry();
+//        grid.setItems(entryOld);
+//        grid.addColumn(EntryOld::getRepresentation).setCaption("Name");
     }
 }

@@ -61,6 +61,7 @@ public class Entry {
                 out += " " + var.getId();
             }
             out += "\n";
+            out += sent + "\n";
             i++;
         }
         return out;
