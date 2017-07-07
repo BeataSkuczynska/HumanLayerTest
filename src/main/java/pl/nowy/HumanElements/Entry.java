@@ -48,4 +48,24 @@ public class Entry {
                 + ", pos=" + pos + "]";
     }
 
+    public String prettyPrint(){
+        String out = "";
+        out += "Entry [orth=" + orth + ", pos=" + pos + "]";
+        out += "\n";
+        out += "Nr of sentences: " + getHumanLayer().getHumanSentences().size() + "\n";
+        out += "\n";
+        int i = 1;
+        for (HumanSentence sent : getHumanLayer().getHumanSentences()){
+            Head head = sent.getHead();
+            out += "S" + i + ": " + head.getTextRepresentation();
+            for (Variant var : head.getVariants()){
+                out += " " + var.getId();
+            }
+            out += "\n";
+            out += sent + "\n";
+            i++;
+        }
+        return out;
+    }
+
 }

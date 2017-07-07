@@ -1,6 +1,7 @@
 package pl.nowy;
 
 import javax.servlet.annotation.WebServlet;
+import javax.xml.bind.JAXBException;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -26,7 +27,11 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
 
-        setContent(new MainWindow());
+        try {
+            setContent(new MainWindow());
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)

@@ -1,11 +1,10 @@
 package pl.nowy.Elements;
 
+import com.vaadin.shared.EventId;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
-import pl.nowy.Temporary.EntryOld;
-import pl.nowy.Temporary.TemporaryEntryFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -22,11 +21,15 @@ public class MainWindow extends VerticalLayout {
     private HorizontalLayout mainPanel;
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
-    private VerticalLayout entryWindow;
-    private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
+    private HorizontalLayout entryWindow;
 
-    public MainWindow() {
-        setSizeFull();
+    private static Dictionary WalentyHumanLayer;
+    //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
+
+    public MainWindow() throws JAXBException {
+
+        populateDictionary();
+        //setSizeFull();
         setMargin(new MarginInfo(false, true, true, true));
         topPanel = new TopPanel();
         topPanel.setSizeFull();
@@ -39,15 +42,20 @@ public class MainWindow extends VerticalLayout {
 
 
 
-        EntryOld entryOld = tempFactory.createEntry();
-        entryWindow = factory.createEntryWindow(entryOld);
-        entryWindow.setSizeFull();
+
+        entryWindow = new HorizontalLayout();
+        mainPanel.addComponent(entryWindow);
+        //entryWindow.setSizeFull();
 
 
         indexPanel = new IndexPanel();
         indexPanel.setSizeFull();
 
-        mainPanel.addComponent(entryWindow);
+        indexPanel.updateGrid(WalentyHumanLayer.getEntries());
+        indexPanel.getGrid().addItemClickListener(event ->
+                changeEntryWindow(event.getItem()));
+
+
         mainPanel.addComponent(indexPanel);
 
         addComponent(topPanel);
@@ -68,15 +76,23 @@ public class MainWindow extends VerticalLayout {
 
     public void testJAXB() throws JAXBException {
 
+        for (Entry entry : WalentyHumanLayer.getEntries()){
+            //System.out.println(entry);
+            //System.out.println(entry.getHumanLayer());
+            System.out.println(entry.prettyPrint());
+        }
+    }
+
+    public void populateDictionary() throws JAXBException {
         JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
+        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
 
+    }
 
-        Dictionary dic = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/test.xml"));
-        for (Entry entry : dic.getEntries()){
-            System.out.println(entry);
-            System.out.println(entry.getHumanLayer());
-        }
+    public void changeEntryWindow(Entry entry){
+        entryWindow.removeAllComponents();
+        entryWindow.addComponent(EntryWindowFactory.createEntryWindow(entry));
     }
 
 

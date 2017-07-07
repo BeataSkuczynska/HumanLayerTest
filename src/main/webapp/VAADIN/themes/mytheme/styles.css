@@ -12505,7 +12505,10 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .form {
 	border: 1px dotted black;
 	background-color: #eff1f6;
-	width: 80%;
+}
+
+.mytheme .form:hover {
+	background-color: #00ace0;
 }
 
 .mytheme .index {
