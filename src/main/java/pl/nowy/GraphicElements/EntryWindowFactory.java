@@ -15,7 +15,7 @@ public class EntryWindowFactory {
 
     public static VerticalLayout createEntryWindow(Entry entry){
         VerticalLayout entryWindow = new VerticalLayout();
-        entryWindow.addStyleName("entry");
+        //entryWindow.addStyleName("entry");
         Label label = new Label(entry.getOrth());
 //        Label allLabel = new Label(entry.prettyPrint());
         entryWindow.addComponent(label);
@@ -31,7 +31,7 @@ public class EntryWindowFactory {
 
     public static HorizontalLayout createSentenceFrame(HumanSentence sentence){
         HorizontalLayout sentenceFrame = new HorizontalLayout();
-        sentenceFrame.setStyleName("entry");
+        //sentenceFrame.setStyleName("entry");
         for (HumanPosition position : sentence.getPositions()){
             HumanPhrase phrase = position.getPhrases().get(0);
             HorizontalLayout phraseFrame = new HorizontalLayout();

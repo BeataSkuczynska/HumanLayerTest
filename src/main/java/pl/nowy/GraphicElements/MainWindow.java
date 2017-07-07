@@ -65,24 +65,25 @@ public class MainWindow extends VerticalLayout {
         setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
         setComponentAlignment(topPanel, Alignment.TOP_CENTER);
 
-        topPanel.getAboutButton().addClickListener(event -> {
-            try {
-                testJAXB();
-            } catch (JAXBException e) {
-                e.printStackTrace();
-            }
-        });
-//        setSizeFull();
     }
+//        topPanel.getAboutButton().addClickListener(event -> {
+//            try {
+//                testJAXB();
+//            } catch (JAXBException e) {
+//                e.printStackTrace();
+//            }
+//        });
+////        setSizeFull();
+//    }
 
-    public void testJAXB() throws JAXBException {
-
-        for (Entry entry : WalentyHumanLayer.getEntries()){
-            //System.out.println(entry);
-            //System.out.println(entry.getHumanLayer());
-            System.out.println(entry.prettyPrint());
-        }
-    }
+//    public void testJAXB() throws JAXBException {
+//
+//        for (Entry entry : WalentyHumanLayer.getEntries()){
+//            //System.out.println(entry);
+//            //System.out.println(entry.getHumanLayer());
+//            System.out.println(entry.prettyPrint());
+//        }
+//    }
 
     public void populateDictionary() throws JAXBException {
         JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
