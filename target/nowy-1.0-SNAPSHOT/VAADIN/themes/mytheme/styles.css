@@ -12516,7 +12516,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .index-panel {
-	align-items: center;
 	width: 30%;
 	height: 100%;
 }
@@ -12540,8 +12539,6 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .main-window {
 	margin-top: 0px;
 	border: 1px dotted black;
-	width: 100%;
-	height: 100%;
 }
 
 .mytheme .top-panel {

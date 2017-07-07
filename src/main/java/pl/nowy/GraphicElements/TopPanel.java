@@ -1,4 +1,4 @@
-package pl.nowy.Elements;
+package pl.nowy.GraphicElements;
 
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;

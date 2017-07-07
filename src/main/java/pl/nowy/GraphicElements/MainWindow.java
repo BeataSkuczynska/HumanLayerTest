@@ -1,16 +1,20 @@
-package pl.nowy.Elements;
+package pl.nowy.GraphicElements;
 
-import com.vaadin.shared.EventId;
+import com.vaadin.server.ClassResource;
+import com.vaadin.server.FileResource;
+import com.vaadin.server.VaadinService;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+
+import static com.vaadin.ui.Alignment.TOP_LEFT;
+import static com.vaadin.ui.Alignment.TOP_RIGHT;
 
 /**
  * Created by Kasia on 09.06.2017.
@@ -27,36 +31,33 @@ public class MainWindow extends VerticalLayout {
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
 
     public MainWindow() throws JAXBException {
-
         populateDictionary();
-        //setSizeFull();
         setMargin(new MarginInfo(false, true, true, true));
         topPanel = new TopPanel();
         topPanel.setSizeFull();
 
         mainPanel = new HorizontalLayout();
         mainPanel.addStyleName("main-window");
-        mainPanel.setSizeFull();
 
         //setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
 
-
-
-
         entryWindow = new HorizontalLayout();
+        entryWindow.setStyleName("entry");
         mainPanel.addComponent(entryWindow);
         //entryWindow.setSizeFull();
 
-
         indexPanel = new IndexPanel();
-        indexPanel.setSizeFull();
+//        indexPanel.setSizeFull();
 
         indexPanel.updateGrid(WalentyHumanLayer.getEntries());
         indexPanel.getGrid().addItemClickListener(event ->
                 changeEntryWindow(event.getItem()));
 
-
         mainPanel.addComponent(indexPanel);
+
+        mainPanel.setSizeFull();
+        mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
+        mainPanel.setComponentAlignment(entryWindow, TOP_LEFT);
 
         addComponent(topPanel);
         addComponent(mainPanel);
@@ -71,7 +72,7 @@ public class MainWindow extends VerticalLayout {
                 e.printStackTrace();
             }
         });
-
+//        setSizeFull();
     }
 
     public void testJAXB() throws JAXBException {
@@ -86,8 +87,10 @@ public class MainWindow extends VerticalLayout {
     public void populateDictionary() throws JAXBException {
         JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
-        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("/Users/Kasia/git/nowy/src/main/resources/data.xml"));
-
+        String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
+        FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
+//        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("C:/Users/kosss/Desktop/Studia/Programowanie aplikacji/applications/HumanLayerTest/HumanLayerTest/target/classes/data.xml"));
+        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
     }
 
     public void changeEntryWindow(Entry entry){

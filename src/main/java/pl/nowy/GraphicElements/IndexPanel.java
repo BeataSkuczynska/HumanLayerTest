@@ -1,12 +1,9 @@
-package pl.nowy.Elements;
+package pl.nowy.GraphicElements;
 
-import com.vaadin.event.selection.SelectionEvent;
-import com.vaadin.event.selection.SelectionListener;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Entry;
 
 import java.util.List;
-import java.util.Set;
 
 
 /**

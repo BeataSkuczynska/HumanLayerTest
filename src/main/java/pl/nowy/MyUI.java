@@ -7,12 +7,8 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
-import pl.nowy.Elements.MainWindow;
+import pl.nowy.GraphicElements.MainWindow;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 
