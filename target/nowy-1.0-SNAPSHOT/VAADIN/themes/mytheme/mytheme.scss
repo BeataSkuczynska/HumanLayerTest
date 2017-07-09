@@ -50,6 +50,7 @@
 
   .index-panel {
     //align-items: center;
+    margin-top: 0px;
     width: 30%;
     height: 100%;
   }
@@ -57,7 +58,11 @@
   .entry {
     border: 1px solid black;
     background-color: #eff1f6;
-    width: 70%;
+    width: 650px;
+    height: 100%;
+    font-family: "Myriad Pro";
+    font-size: 23px;
+    text-align: center;
   }
 
   .meaning {
@@ -70,18 +75,19 @@
   }
 
   .main-window {
-    margin-top: 0px;
+    margin-top: 0;
     border: 1px dotted black;
-    //width: 100%;
-    //height: 100%;
   }
 
   .top-panel {
-    margin-top: 0px;
-    width: 100% !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    //width: 100% !important;
     height: 15% !important;
     border: 1px dotted black;
-    background-color: blue;
+    background-color: #eff1f6;
   }
 
   //.v-top-panel > .v-spacing {
@@ -97,10 +103,28 @@
     transition-duration: 0.4s;
     font-family: "Myriad Pro";
     font-size: 14px;
+    width: 63%;
   }
 
   .top-panel-button:hover {
     background: greenyellow;
+  }
+
+  .search-field {
+    width: 300px;
+  }
+
+  .search-button {
+    width: 75px;
+  }
+  .search-package {
+    width: 375px;
+  }
+
+  .sentence{
+    text-align: left;
+    font-family: "Myriad Pro";
+    font-size: 16px;
   }
 
 }

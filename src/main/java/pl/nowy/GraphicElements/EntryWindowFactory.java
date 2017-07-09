@@ -31,7 +31,7 @@ public class EntryWindowFactory {
 
     public static HorizontalLayout createSentenceFrame(HumanSentence sentence){
         HorizontalLayout sentenceFrame = new HorizontalLayout();
-        sentenceFrame.setStyleName("entry");
+        sentenceFrame.setStyleName("sentence");
         for (HumanPosition position : sentence.getPositions()){
             HumanPhrase phrase = position.getPhrases().get(0);
             HorizontalLayout phraseFrame = new HorizontalLayout();

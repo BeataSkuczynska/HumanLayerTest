@@ -12516,6 +12516,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .index-panel {
+	margin-top: 0px;
 	width: 30%;
 	height: 100%;
 }
@@ -12523,7 +12524,11 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .entry {
 	border: 1px solid black;
 	background-color: #eff1f6;
-	width: 70%;
+	width: 650px;
+	height: 100%;
+	font-family: "Myriad Pro";
+	font-size: 23px;
+	text-align: center;
 }
 
 .mytheme .meaning {
@@ -12537,16 +12542,18 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .main-window {
-	margin-top: 0px;
+	margin-top: 0;
 	border: 1px dotted black;
 }
 
 .mytheme .top-panel {
-	margin-top: 0px;
-	width: 100% !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
 	height: 15% !important;
 	border: 1px dotted black;
-	background-color: blue;
+	background-color: #eff1f6;
 }
 
 .mytheme .top-panel-button {
@@ -12558,8 +12565,27 @@ div.v-layout.v-horizontal.v-widget {
 	transition-duration: 0.4s;
 	font-family: "Myriad Pro";
 	font-size: 14px;
+	width: 63%;
 }
 
 .mytheme .top-panel-button:hover {
 	background: greenyellow;
+}
+
+.mytheme .search-field {
+	width: 300px;
+}
+
+.mytheme .search-button {
+	width: 75px;
+}
+
+.mytheme .search-package {
+	width: 375px;
+}
+
+.mytheme .sentence {
+	text-align: left;
+	font-family: "Myriad Pro";
+	font-size: 16px;
 }

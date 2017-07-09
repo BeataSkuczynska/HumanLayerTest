@@ -41,8 +41,7 @@ public class MainWindow extends VerticalLayout {
 
         //setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
 
-        entryWindow = new HorizontalLayout();
-        entryWindow.setStyleName("entry");
+        entryWindow = new EntryWindow();
         mainPanel.addComponent(entryWindow);
         //entryWindow.setSizeFull();
 
@@ -57,7 +56,7 @@ public class MainWindow extends VerticalLayout {
 
         mainPanel.setSizeFull();
         mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
-        mainPanel.setComponentAlignment(entryWindow, TOP_LEFT);
+        mainPanel.setComponentAlignment(entryWindow, TOP_RIGHT);
 
         addComponent(topPanel);
         addComponent(mainPanel);
@@ -65,23 +64,7 @@ public class MainWindow extends VerticalLayout {
         setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
         setComponentAlignment(topPanel, Alignment.TOP_CENTER);
 
-        topPanel.getAboutButton().addClickListener(event -> {
-            try {
-                testJAXB();
-            } catch (JAXBException e) {
-                e.printStackTrace();
-            }
-        });
 //        setSizeFull();
-    }
-
-    public void testJAXB() throws JAXBException {
-
-        for (Entry entry : WalentyHumanLayer.getEntries()){
-            //System.out.println(entry);
-            //System.out.println(entry.getHumanLayer());
-            System.out.println(entry.prettyPrint());
-        }
     }
 
     public void populateDictionary() throws JAXBException {
@@ -89,7 +72,6 @@ public class MainWindow extends VerticalLayout {
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
         String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
         FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
-//        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(new File("C:/Users/kosss/Desktop/Studia/Programowanie aplikacji/applications/HumanLayerTest/HumanLayerTest/target/classes/data.xml"));
         WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
     }
 
