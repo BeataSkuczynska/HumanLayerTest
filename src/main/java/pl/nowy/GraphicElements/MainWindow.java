@@ -38,11 +38,9 @@ public class MainWindow extends VerticalLayout {
         topPanel = new TopPanel();
         topPanel.setSizeFull();
 
-        //topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
-        //        searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue()));
-
-        //topPanel.getSearchPanel().getSearchField().addValueChangeListener(event ->
-        //            Notification.show("Value is:" + event.getValue()));
+        topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
+        {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
+        topPanel.getSearchPanel().getSearchField().setValue("");});
 
         mainPanel = new HorizontalLayout();
         mainPanel.addStyleName("main-window");

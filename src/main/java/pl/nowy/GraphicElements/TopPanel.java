@@ -27,7 +27,7 @@ public class TopPanel extends HorizontalLayout {
 
         Button guideButton = new Button("JAK KORZYSTAĆ ZE SŁOWNIKA?");
         Button aboutButton = new Button("O PROJEKCIE");
-        SearchPanel searchPanel = new SearchPanel();
+        searchPanel = new SearchPanel();
         //TextField searchField = new TextField();
         //Button searchButton = new Button("Szukaj");
 

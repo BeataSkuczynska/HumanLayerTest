@@ -1,6 +1,8 @@
 package pl.nowy.GraphicElements;
 
+import com.vaadin.event.ShortcutAction;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.TextField;
 
@@ -28,14 +30,16 @@ public class SearchPanel extends HorizontalLayout {
 
     public void init(){
 
-        TextField searchField = new TextField();
-        Button searchButton = new Button("Szukaj");
+        searchField = new TextField();
+        searchButton = new Button("Szukaj");
 
         addStyleName("search-package");
         searchField.addStyleName("search-field");
         searchButton.addStyleName("search-button");
 
-        searchField.setValue("Wpisz czasownik, którego szukasz");
+        searchButton.setClickShortcut(ShortcutAction.KeyCode.ENTER);
+
+        searchField.setPlaceholder("Wpisz czasownik, którego szukasz");
 
         addComponent(searchField);
         addComponent(searchButton);
