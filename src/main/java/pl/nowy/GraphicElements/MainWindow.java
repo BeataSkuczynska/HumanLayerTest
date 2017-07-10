@@ -1,6 +1,5 @@
 package pl.nowy.GraphicElements;
 
-import com.vaadin.server.ClassResource;
 import com.vaadin.server.FileResource;
 import com.vaadin.server.VaadinService;
 import com.vaadin.shared.ui.MarginInfo;
@@ -27,7 +26,7 @@ public class MainWindow extends VerticalLayout {
     private HorizontalLayout mainPanel;
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
-    private HorizontalLayout entryWindow;
+    private EntryHolder entryHolder;
 
     private static Dictionary WalentyHumanLayer;
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
@@ -35,6 +34,7 @@ public class MainWindow extends VerticalLayout {
     public MainWindow() throws JAXBException {
         populateDictionary();
         setMargin(new MarginInfo(false, true, true, true));
+
         topPanel = new TopPanel();
         topPanel.setSizeFull();
 
@@ -43,34 +43,30 @@ public class MainWindow extends VerticalLayout {
         topPanel.getSearchPanel().getSearchField().setValue("");});
 
         mainPanel = new HorizontalLayout();
-        mainPanel.addStyleName("main-window");
-
-        //setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
-
-        entryWindow = new EntryWindow();
-        mainPanel.addComponent(entryWindow);
-        //entryWindow.setSizeFull();
-
+        mainPanel.addStyleName("main-panel");
+        mainPanel.setMargin(false);
+        entryHolder = new EntryHolder();
         indexPanel = new IndexPanel();
-//        indexPanel.setSizeFull();
 
         indexPanel.updateGrid(WalentyHumanLayer.getEntries());
         indexPanel.getGrid().addItemClickListener(event ->
                 changeEntryWindow(event.getItem()));
 
+        mainPanel.setSizeFull();
+        mainPanel.addComponent(entryHolder);
         mainPanel.addComponent(indexPanel);
 
-        mainPanel.setSizeFull();
+        mainPanel.setExpandRatio(entryHolder, 3f);
+        mainPanel.setExpandRatio(indexPanel, 2f);
+
+        mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
         mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
-        mainPanel.setComponentAlignment(entryWindow, TOP_RIGHT);
 
         addComponent(topPanel);
         addComponent(mainPanel);
 
         setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
         setComponentAlignment(topPanel, Alignment.TOP_CENTER);
-
-//        setSizeFull();
     }
 
     public void populateDictionary() throws JAXBException {
@@ -82,8 +78,10 @@ public class MainWindow extends VerticalLayout {
     }
 
     public void changeEntryWindow(Entry entry){
-        entryWindow.removeAllComponents();
-        entryWindow.addComponent(EntryWindowFactory.createEntryWindow(entry));
+        entryHolder.removeAllComponents();
+        EntryWindow ew = EntryWindowFactory.createEntryWindow(entry);
+        entryHolder.addComponent(ew);
+        entryHolder.setComponentAlignment(ew, TOP_LEFT);
     }
 
     public void searchEntryWindow (String searchedVerb){
@@ -98,7 +96,7 @@ public class MainWindow extends VerticalLayout {
         if (outEntry != null){
             changeEntryWindow(outEntry);
         } else {
-            entryWindow.removeAllComponents();
+            entryHolder.removeAllComponents();
         }
 
     }

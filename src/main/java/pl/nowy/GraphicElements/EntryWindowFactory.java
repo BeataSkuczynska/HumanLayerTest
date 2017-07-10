@@ -11,15 +11,10 @@ import pl.nowy.HumanElements.HumanSentence;
  */
 public class EntryWindowFactory {
 
-
-
-    public static VerticalLayout createEntryWindow(Entry entry){
-        VerticalLayout entryWindow = new VerticalLayout();
-        entryWindow.addStyleName("entry");
-        Label label = new Label(entry.getOrth());
-//        Label allLabel = new Label(entry.prettyPrint());
-        entryWindow.addComponent(label);
-//        entryWindow.addComponent(allLabel);
+    public static EntryWindow createEntryWindow(Entry entry){
+        EntryWindow entryWindow = new EntryWindow();
+        Label orth = new Label(entry.getOrth());
+        entryWindow.addComponent(orth);
         for (HumanSentence sent : entry.getHumanLayer().getHumanSentences()){
             HorizontalLayout sentenceFrame = createSentenceFrame(sent);
             entryWindow.addComponent(sentenceFrame);
