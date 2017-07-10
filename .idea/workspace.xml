@@ -72,8 +72,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="289">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1124,7 +1124,7 @@
       <workItem from="1499500141373" duration="1648000" />
       <workItem from="1499591555021" duration="176000" />
       <workItem from="1499621161011" duration="7606000" />
-      <workItem from="1499704288562" duration="2933000" />
+      <workItem from="1499704288562" duration="3025000" />
     </task>
     <task id="LOCAL-00001" summary="dependent path to data.xml, arrangement improvements">
       <created>1499398229353</created>
@@ -1161,11 +1161,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499707041510</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Not important.">
+      <created>1499707305175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1499707305175</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77011000" />
+    <option name="totallyTimeSpent" value="77103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
@@ -1216,7 +1223,8 @@
     <MESSAGE value="Not working yet SearchPanel, but storing already all components." />
     <MESSAGE value="Not working yet SearchPanel, but storing already all components (this time for real)." />
     <MESSAGE value="Working searchEngine." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working searchEngine." />
+    <MESSAGE value="Not important." />
+    <option name="LAST_COMMIT_MESSAGE" value="Not important." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1486,8 +1494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="289">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
