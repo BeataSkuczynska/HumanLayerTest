@@ -38,7 +38,6 @@ public class SearchPanel extends HorizontalLayout {
         searchField.setValue("Wpisz czasownik, którego szukasz");
 
         addComponent(searchField);
-        addComponent(searchField);
         addComponent(searchButton);
     }
 }
