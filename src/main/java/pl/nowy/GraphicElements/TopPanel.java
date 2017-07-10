@@ -11,6 +11,12 @@ import com.vaadin.ui.TextField;
  */
 public class TopPanel extends HorizontalLayout {
 
+    private SearchPanel searchPanel;
+
+    public SearchPanel getSearchPanel() { return searchPanel; }
+
+    public void setSearchPanel(SearchPanel searchPanel) { this.searchPanel = searchPanel; }
+
     public TopPanel() {
         init();
     }
@@ -21,25 +27,25 @@ public class TopPanel extends HorizontalLayout {
 
         Button guideButton = new Button("JAK KORZYSTAĆ ZE SŁOWNIKA?");
         Button aboutButton = new Button("O PROJEKCIE");
-        HorizontalLayout searchPackage = new HorizontalLayout();
-        TextField searchField = new TextField();
-        Button searchButton = new Button("Szukaj");
+        searchPanel = new SearchPanel();
+        //TextField searchField = new TextField();
+        //Button searchButton = new Button("Szukaj");
 
         guideButton.addStyleName("top-panel-button");
         aboutButton.addStyleName("top-panel-button");
-        searchField.addStyleName("search-field");
-        searchButton.addStyleName("search-button");
-        searchPackage.addStyleName("search-package");
+        //searchField.addStyleName("search-field");
+        //searchButton.addStyleName("search-button");
+        //searchPackage.addStyleName("search-package");
 
         addComponent(guideButton);
-        addComponent(searchField);
-        addComponent(searchPackage);
-            searchPackage.addComponent(searchField);
-            searchPackage.addComponent(searchButton);
+        //addComponent(searchField);
+        addComponent(searchPanel);
+            //searchPackage.addComponent(searchField);
+            //searchPackage.addComponent(searchButton);
         addComponent(aboutButton);
 
         setComponentAlignment(guideButton, Alignment.TOP_LEFT);
-        setComponentAlignment(searchPackage, Alignment.TOP_CENTER);
+        setComponentAlignment(searchPanel, Alignment.TOP_CENTER);
         setComponentAlignment(aboutButton, Alignment.TOP_RIGHT);
     }
 

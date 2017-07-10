@@ -8,6 +8,8 @@ import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
 
+import java.util.List;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -35,6 +37,10 @@ public class MainWindow extends VerticalLayout {
         setMargin(new MarginInfo(false, true, true, true));
         topPanel = new TopPanel();
         topPanel.setSizeFull();
+
+        topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
+        {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
+        topPanel.getSearchPanel().getSearchField().setValue("");});
 
         mainPanel = new HorizontalLayout();
         mainPanel.addStyleName("main-window");
@@ -78,6 +84,23 @@ public class MainWindow extends VerticalLayout {
     public void changeEntryWindow(Entry entry){
         entryWindow.removeAllComponents();
         entryWindow.addComponent(EntryWindowFactory.createEntryWindow(entry));
+    }
+
+    public void searchEntryWindow (String searchedVerb){
+        List<Entry> entries = WalentyHumanLayer.getEntries();
+        Entry outEntry = null;
+        for (Entry entry : entries){
+            String entryOrth = entry.getOrth();
+            if (entryOrth.equals(searchedVerb)){
+                outEntry = entry;
+            }
+        }
+        if (outEntry != null){
+            changeEntryWindow(outEntry);
+        } else {
+            entryWindow.removeAllComponents();
+        }
+
     }
 
 
