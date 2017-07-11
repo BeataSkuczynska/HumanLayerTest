@@ -33,6 +33,7 @@ public class IndexPanel extends VerticalLayout {
     public IndexPanel() { init();}
 
     private void init(){
+        setMargin(false);
         grid = new Grid<>();
         addComponent(grid);
         grid.addStyleName("index");

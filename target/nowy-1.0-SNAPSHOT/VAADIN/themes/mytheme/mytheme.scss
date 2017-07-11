@@ -36,8 +36,8 @@
 
   // Insert your own theme rules here
   .form {
-    border: 1px dotted black;
-    //min-width: 220px;
+    //border: 1px dotted black;
+    background-color: #eff1f6;
   }
 
   .form:hover {
@@ -50,30 +50,45 @@
 
   .index-panel {
     //align-items: center;
-    width: 30%;
+    width: 100%;
     height: 100%;
+    font-family: "Myriad Pro";
+  }
+
+  .entry-holder {
+    border: 1px dotted black;
   }
 
   .entry {
-    border: 5px solid #afafaf;
-    background-color: white;
-    //width: 80%;
+    border: 1px solid black;
+    background-color: #eff1f6;
+    width: 100%;
+    height: 100%;
+    font-family: "Myriad Pro";
+    font-size: 23px;
+    text-align: center;
   }
 
-
-  .main-window {
-    margin-top: 0px;
+  .meaning {
     //border: 1px dotted black;
+    background-color: #eff1f6;
     width: 100%;
-    //height: 100%;
+  }
+  .meaning:hover {
+    background-color: #73a5d7;
+  }
+
+  .main-panel {
+    border: 1px dotted black;
+    width: 100%;
   }
 
   .top-panel {
-    margin-top: 0px;
-    width: 100% !important;
+    margin-top: 5px;
+    //width: 100% !important;
     height: 15% !important;
     border: 1px dotted black;
-    background-color: #afafaf;
+    background-color: #eff1f6;
   }
 
   //.v-top-panel > .v-spacing {
@@ -89,10 +104,53 @@
     transition-duration: 0.4s;
     font-family: "Myriad Pro";
     font-size: 14px;
+    width: 63%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
   }
 
   .top-panel-button:hover {
     background: greenyellow;
+  }
+
+  .about-Information-TextArea{
+    border: 1px dotted white;
+    width: 700px;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 25px;
+  }
+
+  .guide-information-TextArea{
+    border: 1px dotted white;
+    width: 700px;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 25px;
+  }
+
+  .search-field {
+    width: 300px;
+  }
+
+  .search-button {
+    width: 75px;
+    text-align: center;
+  }
+  .search-package {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 375px;
+  }
+
+  .sentence{
+    //border: 1px dotted black;
+    text-align: left;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    width: 100%;
+    margin-left: 27px;
   }
 
 }
