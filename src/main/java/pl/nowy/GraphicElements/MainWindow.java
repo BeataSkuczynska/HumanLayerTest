@@ -39,8 +39,16 @@ public class MainWindow extends VerticalLayout {
         topPanel.setSizeFull();
 
         topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
-        {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
-        topPanel.getSearchPanel().getSearchField().setValue("");});
+            {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
+            topPanel.getSearchPanel().getSearchField().setValue("");});
+
+        topPanel.getAboutButton().addClickListener(event ->
+            {entryHolder.removeAllComponents();
+            entryHolder.addComponent(topPanel.getAboutInformation());});
+
+        topPanel.getGuideButton().addClickListener(event ->
+            {entryHolder.removeAllComponents();
+            entryHolder.addComponent(topPanel.getGuideInformation());});
 
         mainPanel = new HorizontalLayout();
         mainPanel.addStyleName("main-panel");
@@ -97,6 +105,7 @@ public class MainWindow extends VerticalLayout {
             changeEntryWindow(outEntry);
         } else {
             entryHolder.removeAllComponents();
+            Notification.show ("Nie ma takiego czasownika na liście");
         }
 
     }

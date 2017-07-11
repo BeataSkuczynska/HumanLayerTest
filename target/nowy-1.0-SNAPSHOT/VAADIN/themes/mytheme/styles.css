@@ -12574,6 +12574,20 @@ div.v-layout.v-horizontal.v-widget {
 	background: greenyellow;
 }
 
+.mytheme .about-Information-TextArea {
+	width: 400px;
+	text-align: center;
+	font-family: "Myriad Pro";
+	font-size: 27px;
+}
+
+.mytheme .guide-information-TextArea {
+	width: 300px;
+	text-align: center;
+	font-family: "Myriad Pro";
+	font-size: 27px;
+}
+
 .mytheme .search-field {
 	width: 300px;
 }
