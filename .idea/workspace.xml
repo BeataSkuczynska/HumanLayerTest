@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eefc2d1c-3514-488c-a26a-85d722982c13" name="Default" comment="new branch">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/AboutWindow.java" />
+    <list default="true" id="eefc2d1c-3514-488c-a26a-85d722982c13" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/GraphicElements/MainWindow.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/GraphicElements/MainWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/GraphicElements/MainWindow.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/GraphicElements/MainWindow.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,15 +20,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="1200">
+              <caret line="96" column="71" lean-forward="false" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DictionaryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
               <folding>
-                <marker date="1502738704000" expanded="true" signature="2743:3147" ph="{...}" />
-                <marker date="1502738704000" expanded="true" signature="3195:3410" ph="{...}" />
-                <marker date="1502738704000" expanded="true" signature="3467:3977" ph="{...}" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,21 +60,6 @@
             <state relative-caret-position="3195">
               <caret line="213" column="34" lean-forward="false" selection-start-line="213" selection-start-column="34" selection-end-line="213" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HumanPhrase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPhrase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#388#389#0" expanded="false" />
-                <element signature="e#429#430#0" expanded="false" />
-                <element signature="e#497#498#0" expanded="false" />
-                <element signature="e#557#558#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/TopPanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="453">
@@ -221,8 +219,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/EntryHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/SearchPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/TopPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -1098,14 +1097,21 @@
       <option name="project" value="LOCAL" />
       <updated>1499707305175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new branch">
+      <created>1502738850163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1502738850163</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90584000" />
+    <option name="totallyTimeSpent" value="91564000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="790" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="790" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1175,7 +1181,8 @@
     <MESSAGE value="Not working yet SearchPanel, but storing already all components (this time for real)." />
     <MESSAGE value="Working searchEngine." />
     <MESSAGE value="Not important." />
-    <option name="LAST_COMMIT_MESSAGE" value="Not important." />
+    <MESSAGE value="new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="new branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,13 +1199,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/MyUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1211,11 +1211,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1502738704000" expanded="true" signature="2743:3147" ph="{...}" />
-            <marker date="1502738704000" expanded="true" signature="3195:3410" ph="{...}" />
-            <marker date="1502738704000" expanded="true" signature="3467:3977" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,18 +1418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <marker date="1502738704000" expanded="true" signature="2743:3147" ph="{...}" />
-            <marker date="1502738704000" expanded="true" signature="3195:3410" ph="{...}" />
-            <marker date="1502738704000" expanded="true" signature="3467:3977" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Variant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1472,6 +1456,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/GraphicElements/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="96" column="71" lean-forward="false" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
           <folding />
         </state>
       </provider>

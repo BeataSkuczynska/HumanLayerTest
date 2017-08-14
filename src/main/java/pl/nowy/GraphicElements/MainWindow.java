@@ -6,6 +6,7 @@ import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
+import pl.nowy.dictionary.DictionaryService;
 
 import java.util.List;
 
@@ -28,11 +29,11 @@ public class MainWindow extends VerticalLayout {
     private EntryWindowFactory factory = new EntryWindowFactory();
     private EntryHolder entryHolder;
 
-    private static Dictionary WalentyHumanLayer;
+    //private static Dictionary WalentyHumanLayer;
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
 
     public MainWindow() throws JAXBException {
-        populateDictionary();
+        //populateDictionary();
         setMargin(new MarginInfo(false, true, true, true));
 
         topPanel = new TopPanel();
@@ -56,7 +57,7 @@ public class MainWindow extends VerticalLayout {
         entryHolder = new EntryHolder();
         indexPanel = new IndexPanel();
 
-        indexPanel.updateGrid(WalentyHumanLayer.getEntries());
+        indexPanel.updateGrid(DictionaryService.getWalentyHumanLayer().getEntries());
         indexPanel.getGrid().addItemClickListener(event ->
                 changeEntryWindow(event.getItem()));
 
@@ -77,13 +78,13 @@ public class MainWindow extends VerticalLayout {
         setComponentAlignment(topPanel, Alignment.TOP_CENTER);
     }
 
-    public void populateDictionary() throws JAXBException {
-        JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
-        Unmarshaller unmarshaller = ctx.createUnmarshaller();
-        String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
-        FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
-        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
-    }
+//    public void populateDictionary() throws JAXBException {
+//        JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
+//        Unmarshaller unmarshaller = ctx.createUnmarshaller();
+//        String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
+//        FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
+//        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
+//    }
 
     public void changeEntryWindow(Entry entry){
         entryHolder.removeAllComponents();
@@ -93,7 +94,7 @@ public class MainWindow extends VerticalLayout {
     }
 
     public void searchEntryWindow (String searchedVerb){
-        List<Entry> entries = WalentyHumanLayer.getEntries();
+        List<Entry> entries = DictionaryService.getWalentyHumanLayer().getEntries();
         Entry outEntry = null;
         for (Entry entry : entries){
             String entryOrth = entry.getOrth();
