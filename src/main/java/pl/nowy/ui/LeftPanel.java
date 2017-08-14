@@ -1,15 +1,18 @@
 package pl.nowy.ui;
 
-import com.vaadin.ui.*;
+import com.vaadin.ui.Grid;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.VerticalLayout;
 import pl.nowy.HumanElements.Entry;
+import pl.nowy.dictionary.DictionaryService;
 
 import java.util.List;
 
-
 /**
- * Created by Kasia on 14.06.2017.
+ * Created by Kasia on 14.08.2017.
  */
-public class IndexPanel extends VerticalLayout {
+
+public class LeftPanel  extends VerticalLayout {
 
     private HorizontalLayout headPanel;
     private Grid<Entry> grid;
@@ -30,7 +33,7 @@ public class IndexPanel extends VerticalLayout {
         this.grid = grid;
     }
 
-    public IndexPanel() { init();}
+    public LeftPanel() { init();}
 
     private void init(){
         setMargin(false);

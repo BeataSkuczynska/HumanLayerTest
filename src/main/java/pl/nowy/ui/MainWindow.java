@@ -22,6 +22,7 @@ public class MainWindow extends VerticalLayout {
     private IndexPanel indexPanel;
     private EntryWindowFactory factory = new EntryWindowFactory();
     private EntryHolder entryHolder;
+    private VerticalLayout leftPanel;
 
     //private static Dictionary WalentyHumanLayer;
     //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
@@ -50,20 +51,23 @@ public class MainWindow extends VerticalLayout {
         mainPanel.setMargin(false);
         entryHolder = new EntryHolder();
         indexPanel = new IndexPanel();
+        leftPanel = new LeftPanel();
+        leftPanel.setSizeFull();
 
-        indexPanel.updateGrid(DictionaryService.getWalentyHumanLayer().getEntries());
-        indexPanel.getGrid().addItemClickListener(event ->
-                changeEntryWindow(event.getItem()));
+//        leftPanel.nic();
+//
+//        leftPanel.indexPanel.getGrid().addItemClickListener(event ->
+//                changeEntryWindow(event.getItem()));
 
         mainPanel.setSizeFull();
+        mainPanel.addComponent(leftPanel);
         mainPanel.addComponent(entryHolder);
-        mainPanel.addComponent(indexPanel);
-
-        mainPanel.setExpandRatio(entryHolder, 3f);
-        mainPanel.setExpandRatio(indexPanel, 2f);
+        //mainPanel.addComponent(indexPanel);
+        //mainPanel.setExpandRatio(entryHolder, 3f);
+        //mainPanel.setExpandRatio(indexPanel, 2f);
 
         mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
-        mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
+        //mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
 
         addComponent(topPanel);
         addComponent(mainPanel);
@@ -102,6 +106,10 @@ public class MainWindow extends VerticalLayout {
             entryHolder.removeAllComponents();
             Notification.show ("Nie ma takiego czasownika na liście");
         }
+
+    }
+
+    public void nic(){
 
     }
 
