@@ -1,19 +1,13 @@
-package pl.nowy.GraphicElements;
+package pl.nowy.ui;
 
-import com.vaadin.server.FileResource;
-import com.vaadin.server.VaadinService;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
-import pl.nowy.HumanElements.Dictionary;
 import pl.nowy.HumanElements.Entry;
 import pl.nowy.dictionary.DictionaryService;
 
 import java.util.List;
 
-import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import java.io.File;
 
 import static com.vaadin.ui.Alignment.TOP_LEFT;
 import static com.vaadin.ui.Alignment.TOP_RIGHT;

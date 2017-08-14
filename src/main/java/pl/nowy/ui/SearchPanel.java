@@ -1,8 +1,7 @@
-package pl.nowy.GraphicElements;
+package pl.nowy.ui;
 
 import com.vaadin.event.ShortcutAction;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.TextField;
 

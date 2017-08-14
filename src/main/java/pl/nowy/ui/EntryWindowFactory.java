@@ -1,4 +1,4 @@
-package pl.nowy.GraphicElements;
+package pl.nowy.ui;
 
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Entry;

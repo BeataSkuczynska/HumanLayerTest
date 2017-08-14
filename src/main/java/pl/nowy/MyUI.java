@@ -8,7 +8,7 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
-import pl.nowy.GraphicElements.MainWindow;
+import pl.nowy.ui.MainWindow;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 

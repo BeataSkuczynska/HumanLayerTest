@@ -1,7 +1,6 @@
-package pl.nowy.GraphicElements;
+package pl.nowy.ui;
 
 import com.vaadin.shared.ui.MarginInfo;
-import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
 
 /**
