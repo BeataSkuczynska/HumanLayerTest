@@ -46,6 +46,18 @@
 
   .index {
     width: 100%;
+    color: white;
+  }
+
+
+  .v-grid-cell{
+    background: #156ab3 !important;
+  }
+
+
+
+  .left-panel {
+    background-color: #156ab3;
   }
 
   .index-panel {
@@ -53,7 +65,9 @@
     width: 100%;
     height: 100%;
     font-family: "Myriad Pro";
+
   }
+
 
   .entry-holder {
     border: 1px dotted black;
@@ -137,6 +151,8 @@
   .search-button {
     width: 75px;
     text-align: center;
+    background: #156ab3 !important;
+    color: white !important;
   }
   .search-package {
     margin-top: 3px;

@@ -36,7 +36,7 @@ public class TopPanel extends HorizontalLayout {
 
         guideButton = new Button("JAK KORZYSTAĆ ZE SŁOWNIKA?");
         aboutButton = new Button("O PROJEKCIE");
-        searchPanel = new SearchPanel();
+        //searchPanel = new SearchPanel();
         aboutInformation = new TextArea();
         guideInformation = new TextArea();
         aboutInformation.setValue("Projekt współtworzony przez ich troje: KS, BS, KZ");
@@ -54,13 +54,13 @@ public class TopPanel extends HorizontalLayout {
 
         addComponent(guideButton);
         //addComponent(searchField);
-        addComponent(searchPanel);
+        //ddComponent(searchPanel);
             //searchPackage.addComponent(searchField);
             //searchPackage.addComponent(searchButton);
         addComponent(aboutButton);
 
         setComponentAlignment(guideButton, Alignment.TOP_LEFT);
-        setComponentAlignment(searchPanel, Alignment.TOP_CENTER);
+        //setComponentAlignment(searchPanel, Alignment.TOP_CENTER);
         setComponentAlignment(aboutButton, Alignment.TOP_RIGHT);
     }
 

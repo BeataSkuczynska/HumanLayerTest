@@ -1,5 +1,6 @@
 package pl.nowy.ui;
 
+import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
@@ -14,45 +15,25 @@ import java.util.List;
 
 public class LeftPanel  extends VerticalLayout {
 
-    private HorizontalLayout headPanel;
-    private Grid<Entry> grid;
-
-    public HorizontalLayout getHeadPanel() {
-        return headPanel;
-    }
-
-    public void setHeadPanel(HorizontalLayout headPanel) {
-        this.headPanel = headPanel;
-    }
-
-    public Grid<Entry> getGrid() {
-        return grid;
-    }
-
-    public void setGrid(Grid<Entry> grid) {
-        this.grid = grid;
-    }
+    private IndexPanel indexPanel;
+    private SearchPanel searchPanel;
 
     public LeftPanel() { init();}
 
     private void init(){
-        setMargin(false);
-        grid = new Grid<>();
-        addComponent(grid);
-        grid.addStyleName("index");
-        addStyleName("index-panel");
-        grid.setSelectionMode(Grid.SelectionMode.SINGLE);
+
+        addStyleName("left-panel");
+
+        setMargin(new MarginInfo(true, false, true, true));
+        searchPanel = new SearchPanel();
+        addComponent(searchPanel);
+
+        indexPanel = new IndexPanel();
+        indexPanel.populate(DictionaryService.getWalentyHumanLayer().getEntries());
+        addComponent(indexPanel);
     }
 
-    public void updateGrid(List<Entry> entryList) {
-        grid.setItems(entryList);
-        grid.addColumn(Entry::getOrth).setCaption("Leksem");
-        grid.addColumn(Entry::getPos).setCaption("Część mowy");
+    public IndexPanel getIndexPanel() {
+        return indexPanel;
     }
-
-    public void nicnic(){
-
-    }
-
-
 }

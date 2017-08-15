@@ -41,15 +41,18 @@ public class IndexPanel extends VerticalLayout {
         grid.setSelectionMode(Grid.SelectionMode.SINGLE);
     }
 
-    public void updateGrid(List<Entry> entryList) {
+    public void populate(List<Entry> entryList) {
         grid.setItems(entryList);
-        grid.addColumn(Entry::getOrth).setCaption("Leksem");
-        grid.addColumn(Entry::getPos).setCaption("Część mowy");
+        grid.addColumn(Entry::getOrth)
+                .setCaption("Leksem")
+                .setWidth(400)
+                .setResizable(false);
+        grid.addColumn(Entry::getPos)
+                .setCaption("?")
+                .setWidth(100)
+                .setResizable(false);
     }
-
-    public void nicnic(){
-
-    }
+    
 
 
 }

@@ -12512,6 +12512,15 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .index {
 	width: 100%;
+	color: white;
+}
+
+.mytheme .v-grid-cell {
+	background: #156ab3 !important;
+}
+
+.mytheme .left-panel {
+	background-color: #156ab3;
 }
 
 .mytheme .index-panel {
@@ -12575,17 +12584,19 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .about-Information-TextArea {
-	width: 400px;
+	border: 1px dotted white;
+	width: 700px;
 	text-align: center;
 	font-family: "Myriad Pro";
-	font-size: 27px;
+	font-size: 25px;
 }
 
 .mytheme .guide-information-TextArea {
-	width: 300px;
+	border: 1px dotted white;
+	width: 700px;
 	text-align: center;
 	font-family: "Myriad Pro";
-	font-size: 27px;
+	font-size: 25px;
 }
 
 .mytheme .search-field {
@@ -12595,6 +12606,8 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .search-button {
 	width: 75px;
 	text-align: center;
+	background: #156ab3 !important;
+	color: white !important;
 }
 
 .mytheme .search-package {

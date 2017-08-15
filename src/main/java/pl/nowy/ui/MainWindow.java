@@ -15,28 +15,27 @@ import static com.vaadin.ui.Alignment.TOP_RIGHT;
 /**
  * Created by Kasia on 09.06.2017.
  */
-public class MainWindow extends VerticalLayout {
+public class MainWindow extends HorizontalLayout {
 
     private TopPanel topPanel;
-    private HorizontalLayout mainPanel;
-    private IndexPanel indexPanel;
+
     private EntryWindowFactory factory = new EntryWindowFactory();
     private EntryHolder entryHolder;
-    private VerticalLayout leftPanel;
+    private LeftPanel leftPanel;
+    private VerticalLayout mainPanel;
 
-    //private static Dictionary WalentyHumanLayer;
-    //private TemporaryEntryFactory tempFactory = new TemporaryEntryFactory();
+
 
     public MainWindow() throws JAXBException {
-        //populateDictionary();
-        setMargin(new MarginInfo(false, true, true, true));
+
+        setMargin(new MarginInfo(false, false, false, false));
 
         topPanel = new TopPanel();
         topPanel.setSizeFull();
 
-        topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
-            {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
-            topPanel.getSearchPanel().getSearchField().setValue("");});
+//        topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
+//            {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
+//            topPanel.getSearchPanel().getSearchField().setValue("");});
 
         topPanel.getAboutButton().addClickListener(event ->
             {entryHolder.removeAllComponents();
@@ -46,43 +45,34 @@ public class MainWindow extends VerticalLayout {
             {entryHolder.removeAllComponents();
             entryHolder.addComponent(topPanel.getGuideInformation());});
 
-        mainPanel = new HorizontalLayout();
+        mainPanel = new VerticalLayout();
         mainPanel.addStyleName("main-panel");
         mainPanel.setMargin(false);
         entryHolder = new EntryHolder();
-        indexPanel = new IndexPanel();
-        leftPanel = new LeftPanel();
-        leftPanel.setSizeFull();
 
-//        leftPanel.nic();
-//
-//        leftPanel.indexPanel.getGrid().addItemClickListener(event ->
-//                changeEntryWindow(event.getItem()));
+
+        leftPanel = new LeftPanel();
+        leftPanel.getIndexPanel().getGrid().addItemClickListener(event ->
+                changeEntryWindow(event.getItem()));
 
         mainPanel.setSizeFull();
-        mainPanel.addComponent(leftPanel);
         mainPanel.addComponent(entryHolder);
-        //mainPanel.addComponent(indexPanel);
+
         //mainPanel.setExpandRatio(entryHolder, 3f);
         //mainPanel.setExpandRatio(indexPanel, 2f);
 
         mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
         //mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
 
-        addComponent(topPanel);
+        mainPanel.addComponent(topPanel);
+        addComponent(leftPanel);
         addComponent(mainPanel);
 
         setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
-        setComponentAlignment(topPanel, Alignment.TOP_CENTER);
+//        setComponentAlignment(topPanel, Alignment.TOP_CENTER);
     }
 
-//    public void populateDictionary() throws JAXBException {
-//        JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
-//        Unmarshaller unmarshaller = ctx.createUnmarshaller();
-//        String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
-//        FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
-//        WalentyHumanLayer = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
-//    }
+
 
     public void changeEntryWindow(Entry entry){
         entryHolder.removeAllComponents();
