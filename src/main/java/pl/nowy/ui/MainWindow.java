@@ -29,7 +29,7 @@ public class MainWindow extends HorizontalLayout {
 
     public MainWindow() throws JAXBException {
 
-        setMargin(new MarginInfo(false, false, true, false));
+        setMargin(new MarginInfo(false, false, false, false));
 
 
         mainPanel = new VerticalLayout();
@@ -64,7 +64,7 @@ public class MainWindow extends HorizontalLayout {
 
         //entryHolder.setSizeFull();
 
-        leftPanel.setSizeFull();
+        //leftPanel.setSizeFull();
         //mainPanel.setSizeFull();
 
 

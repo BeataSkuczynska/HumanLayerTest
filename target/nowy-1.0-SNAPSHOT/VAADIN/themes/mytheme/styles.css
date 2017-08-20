@@ -12507,43 +12507,42 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .form:hover {
-	background-color: #00ace0;
+	background-color: #9AD2DB;
 }
 
 .mytheme .index {
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	min-height: 5000px !important;
 	color: white;
-	border: 1px solid yellow;
 }
 
 .mytheme .v-grid-cell {
-	background: #156ab3 !important;
+	background: #6B7C99 !important;
 }
 
 .mytheme .index-letter {
 	color: white;
 	font-family: "Myriad Pro";
-	border: 1px solid white;
 	width: 50px;
 	height: 50px;
 }
 
 .mytheme .left-panel {
-	background-color: #156ab3;
+	background-color: #6B7C99;
+	height: 100%;
+	width: 100%;
 }
 
 .mytheme .index-panel {
 	font-family: "Myriad Pro";
-	border: 1px solid greenyellow;
 	margin-left: 1px !important;
 	margin-right: 1px !important;
-}
-
-.mytheme .entry-holder {
-	border: 1px dotted black;
+	height: 100%;
 }
 
 .mytheme .entry {
-	border: 1px solid black;
 	background-color: #eff1f6;
 	font-family: "Myriad Pro";
 	font-size: 23px;
@@ -12573,7 +12572,6 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .top-panel {
 	margin-top: 5px;
 	height: 15% !important;
-	border: 1px dotted black;
 	background-color: #eff1f6;
 }
 
@@ -12593,7 +12591,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .top-panel-button:hover {
-	background: greenyellow;
+	background: #9AD2DB;
 }
 
 .mytheme .about-Information-TextArea {
@@ -12614,14 +12612,13 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .search-button {
 	text-align: center;
-	background: #156ab3 !important;
+	background: #6B7C99 !important;
 	color: white !important;
 }
 
 .mytheme .search-package {
 	margin-top: 3px;
 	margin-bottom: 3px;
-	border: 1px solid lightseagreen;
 }
 
 .mytheme .sentence {

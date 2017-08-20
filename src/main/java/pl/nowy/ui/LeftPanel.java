@@ -30,7 +30,7 @@ public class LeftPanel  extends VerticalLayout {
 
         addStyleName("left-panel");
 
-        setMargin(new MarginInfo(true, true, true, true));
+        setMargin(new MarginInfo(true, true, false, true));
         setSpacing(false);
         searchPanel = new SearchPanel();
         addComponent(searchPanel);

@@ -53,9 +53,13 @@ public class EntryFrameFactory {
         sentenceFrame.setStyleName("sentence");
         for (HumanPosition position : sentence.getPositions()){
             HumanInstance phrase = position.getPhrases().get(0);
-            HorizontalLayout phraseFrame = new HorizontalLayout();
+            VerticalLayout phraseFrame = new VerticalLayout();
+
+
             Button phraseLabel = new Button(phrase.getTextRepresentation());
+            Label phrLabel = new Label(phrase.getType());
             phraseLabel.addClickListener(clickEvent -> Notification.show("pompom"));
+            phraseFrame.addComponent(phrLabel);
             phraseFrame.addComponent(phraseLabel);
             phraseFrame.addStyleName("form");
             sentenceFrame.addComponent(phraseFrame);
@@ -78,6 +82,7 @@ public class EntryFrameFactory {
         }
         Component headComponent = new Label(sentence.getHead().getTextRepresentation());
         sentenceFrame.addComponent(headComponent, 1);
+        //sentenceFrame.setComponentAlignment(headComponent, Alignment.MIDDLE_CENTER);
         return sentenceFrame;
     }
 

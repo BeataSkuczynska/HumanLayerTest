@@ -45,7 +45,7 @@ public class IndexPanel extends HorizontalLayout {
         grid = new Grid<>();
         letterPanel = generateLetters();
         //letterPanel.setSpacing(false);
-        letterPanel.setMargin(new MarginInfo(false, false, true, false));
+        letterPanel.setMargin(new MarginInfo(true, false, true, false));
         addComponent(letterPanel);
 
         setComponentAlignment(letterPanel, TOP_LEFT);
@@ -59,9 +59,9 @@ public class IndexPanel extends HorizontalLayout {
 
         setSpacing(false);
 
+        setSizeFull();
         grid.setSizeFull();
         letterPanel.setSizeFull();
-        setSizeFull();
     }
 
     public void populate(List<Entry> entryList) {
