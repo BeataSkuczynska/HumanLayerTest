@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eefc2d1c-3514-488c-a26a-85d722982c13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/output.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanPhrase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanPhrase.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPhrase.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Head.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Head.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanPosition.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanPosition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanSentence.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/HumanSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Variant.class" afterPath="$PROJECT_DIR$/target/classes/pl/nowy/HumanElements/Variant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Head.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Head.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanPosition.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanPosition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanSentence.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/HumanSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Variant.class" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/WEB-INF/classes/pl/nowy/HumanElements/Variant.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Head.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Head.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPosition.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPosition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Variant.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Variant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrame.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrameFactory.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrameFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/VAADIN/themes/mytheme/mytheme.scss" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/VAADIN/themes/mytheme/mytheme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/VAADIN/themes/mytheme/styles.css" afterPath="$PROJECT_DIR$/target/nowy-1.0-SNAPSHOT/VAADIN/themes/mytheme/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +27,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,23 +36,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntryFrameFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EntryHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntryFrameFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="398">
+              <caret line="57" column="84" lean-forward="false" selection-start-line="57" selection-start-column="84" selection-end-line="57" selection-end-column="84" />
               <folding>
-                <marker date="1503251815000" expanded="true" signature="703:710" ph="{...}" />
+                <marker date="1503255347000" expanded="true" signature="789:796" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="output.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="output.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/output.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mytheme.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -84,11 +93,11 @@
       <file leaf-file-name="EntryFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
               <folding>
-                <element signature="e#1548#1549#0" expanded="true" />
-                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Elements/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Meaning.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/Schema.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/Temporary/TemporaryEntryFactory.java" />
@@ -192,9 +200,7 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/TopPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/IndexPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/LeftPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryWindowFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPhrase.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanPosition.java" />
@@ -202,7 +208,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/Variant.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanSentence.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/HumanElements/HumanInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrameFactory.java" />
       </list>
     </option>
@@ -1189,7 +1198,7 @@
       <workItem from="1502742295665" duration="223000" />
       <workItem from="1502749280927" duration="10171000" />
       <workItem from="1502807231867" duration="1466000" />
-      <workItem from="1503051497940" duration="8593000" />
+      <workItem from="1503051497940" duration="11854000" />
     </task>
     <task id="LOCAL-00001" summary="dependent path to data.xml, arrangement improvements">
       <created>1499398229353</created>
@@ -1275,11 +1284,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503230360413</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new data, semantic syntax button">
+      <created>1503252351345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1503252351345</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113431000" />
+    <option name="totallyTimeSpent" value="116692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="0" />
@@ -1338,7 +1354,8 @@
     <MESSAGE value="???" />
     <MESSAGE value="css blue fun fun fun" />
     <MESSAGE value="semanticFrame syntaxFrame" />
-    <option name="LAST_COMMIT_MESSAGE" value="semanticFrame syntaxFrame" />
+    <MESSAGE value="new data, semantic syntax button" />
+    <option name="LAST_COMMIT_MESSAGE" value="new data, semantic syntax button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1527,25 +1544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/dictionary/DictionaryService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1631,10 +1629,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/output.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="1230">
+          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1643,30 +1665,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/nowy/ui/EntryFrameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="398">
+          <caret line="57" column="84" lean-forward="false" selection-start-line="57" selection-start-column="84" selection-end-line="57" selection-end-column="84" />
           <folding>
-            <marker date="1503251815000" expanded="true" signature="703:710" ph="{...}" />
+            <marker date="1503255347000" expanded="true" signature="789:796" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/output.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>

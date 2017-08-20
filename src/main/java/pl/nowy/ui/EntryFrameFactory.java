@@ -17,6 +17,7 @@ public class EntryFrameFactory {
 
 
         Label orth = new Label(entry.getOrth());
+        orth.addContextClickListener(contextClickEvent -> Notification.show("klik"));
 
         entryFrame.getEntryFrameTop().addComponent(orth);
         entryFrame.setSemanticFrame(createSemanticFrame(entry));
@@ -33,6 +34,7 @@ public class EntryFrameFactory {
             HorizontalLayout sentenceFrame = createSemanticSentence(sent);
             semanticFrame.addComponent(sentenceFrame);
         }
+        semanticFrame.setSizeFull();
         return semanticFrame;
     }
 
@@ -52,7 +54,8 @@ public class EntryFrameFactory {
         for (HumanPosition position : sentence.getPositions()){
             HumanInstance phrase = position.getPhrases().get(0);
             HorizontalLayout phraseFrame = new HorizontalLayout();
-            Label phraseLabel = new Label(phrase.getTextRepresentation());
+            Button phraseLabel = new Button(phrase.getTextRepresentation());
+            phraseLabel.addClickListener(clickEvent -> Notification.show("pompom"));
             phraseFrame.addComponent(phraseLabel);
             phraseFrame.addStyleName("form");
             sentenceFrame.addComponent(phraseFrame);

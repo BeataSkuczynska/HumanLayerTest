@@ -23,6 +23,7 @@ public class EntryFrame extends VerticalLayout {
     public EntryFrame() {
         EntryFrameTop = new HorizontalLayout();
         EntryFrameCenter = new VerticalLayout();
+        EntryFrameCenter.addStyleName("entry-frame");
         Button semButton = new Button("Semantyka");
         Button synButton = new Button("Składnia");
         semButton.addClickListener(clickEvent -> showSemanticFrame());
@@ -41,6 +42,7 @@ public class EntryFrame extends VerticalLayout {
     public void showSemanticFrame(){
         EntryFrameCenter.removeAllComponents();
         EntryFrameCenter.addComponent(SemanticFrame);
+        SemanticFrame.addStyleName("entry-frame");
         SemanticFrame.setSizeFull();
     }
 

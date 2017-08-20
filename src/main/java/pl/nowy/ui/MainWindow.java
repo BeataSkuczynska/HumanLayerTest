@@ -1,6 +1,8 @@
 package pl.nowy.ui;
 
 import com.vaadin.shared.ui.MarginInfo;
+import com.vaadin.shared.ui.Orientation;
+import com.vaadin.shared.ui.slider.SliderOrientation;
 import com.vaadin.ui.*;
 import pl.nowy.HumanElements.Entry;
 import pl.nowy.dictionary.DictionaryService;
@@ -33,6 +35,7 @@ public class MainWindow extends HorizontalLayout {
         mainPanel = new VerticalLayout();
         mainPanel.addStyleName("main-panel");
         mainPanel.setMargin(false);
+        mainPanel.setSpacing(false);
         entryHolder = new EntryHolder();
 
 
@@ -59,13 +62,13 @@ public class MainWindow extends HorizontalLayout {
         mainPanel.addComponent(topPanel);
         mainPanel.addComponent(entryHolder);
 
-        entryHolder.setSizeFull();
+        //entryHolder.setSizeFull();
 
         leftPanel.setSizeFull();
-        mainPanel.setSizeFull();
+        //mainPanel.setSizeFull();
 
 
-        mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
+        //mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
         //mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
 
         addComponent(leftPanel);
@@ -76,6 +79,7 @@ public class MainWindow extends HorizontalLayout {
 
         //setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
 
+
         setSizeFull();
     }
 
@@ -84,6 +88,7 @@ public class MainWindow extends HorizontalLayout {
     public void changeEntryWindow(Entry entry){
         entryHolder.removeAllComponents();
         EntryFrame ew = EntryFrameFactory.createEntryFrame(entry);
+        //ew.setSizeFull();
         entryHolder.addComponent(ew);
         entryHolder.setComponentAlignment(ew, TOP_LEFT);
     }

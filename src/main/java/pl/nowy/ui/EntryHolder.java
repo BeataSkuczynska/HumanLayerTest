@@ -10,5 +10,7 @@ public class EntryHolder extends VerticalLayout {
 
     public EntryHolder() {
         setMargin(new MarginInfo(false, false, false, false));
+        setSpacing(false);
+        addStyleName("entry-frame");
     }
 }
