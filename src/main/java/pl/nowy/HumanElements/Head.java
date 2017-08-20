@@ -13,8 +13,8 @@ public class Head {
     @XmlElement(name = "text_rep")
     private String textRepresentation;
 
-    @XmlElementWrapper(name="variants")
-    @XmlElement(name="var")
+    @XmlElementWrapper(name="meanings")
+    @XmlElement(name="meaning")
     private List<Variant> variants;
 
 

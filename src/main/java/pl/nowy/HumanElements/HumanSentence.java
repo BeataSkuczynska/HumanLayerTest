@@ -13,7 +13,7 @@ public class HumanSentence {
     private Head head;
 
     @XmlElementWrapper(name="positions")
-    @XmlElement(name="position")
+    @XmlElement(name="human_position")
     private List<HumanPosition> positions;
 
     public Head getHead() {
@@ -40,7 +40,7 @@ public class HumanSentence {
         int i = 1;
         for (HumanPosition position : positions){
             out += "Postition" + i + ": ";
-            for (HumanPhrase phrase : position.getPhrases()){
+            for (HumanInstance phrase : position.getPhrases()){
                 out += phrase.getTextRepresentation();
             }
             i++;

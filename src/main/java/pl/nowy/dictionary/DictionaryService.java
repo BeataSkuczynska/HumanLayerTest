@@ -28,7 +28,7 @@ public class DictionaryService {
         JAXBContext ctx = JAXBContext.newInstance(Dictionary.class);
         Unmarshaller unmarshaller = ctx.createUnmarshaller();
         String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
-        FileResource data = new FileResource(new File(basepath + "/WEB-INF/data.xml"));
+        FileResource data = new FileResource(new File(basepath + "/WEB-INF/output.xml"));
         Dictionary ret = (Dictionary) unmarshaller.unmarshal(data.getSourceFile());
         return ret;
     }

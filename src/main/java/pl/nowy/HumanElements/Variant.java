@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Created by Kasia on 05.07.2017.
  */
-@XmlRootElement(name = "var")
+@XmlRootElement(name = "meaning")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Variant {
 
