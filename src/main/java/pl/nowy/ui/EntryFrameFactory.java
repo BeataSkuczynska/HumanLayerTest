@@ -9,17 +9,27 @@ import pl.nowy.HumanElements.HumanSentence;
 /**
  * Created by Kasia on 14.06.2017.
  */
-public class EntryWindowFactory {
+public class EntryFrameFactory {
 
-    public static EntryWindow createEntryWindow(Entry entry){
-        EntryWindow entryWindow = new EntryWindow();
+    public static EntryFrame createEntryFrame(Entry entry){
+        EntryFrame entryFrame = new EntryFrame();
         Label orth = new Label(entry.getOrth());
-        entryWindow.addComponent(orth);
+
+        entryFrame.addComponent(orth);
+        entryFrame.setSemanticFrame(createSemanticFrame(entry));
+        entryFrame.showSemanticFrame();
+        return entryFrame;
+    }
+
+
+
+    public static VerticalLayout createSemanticFrame(Entry entry){
+        VerticalLayout semanticFrame = new VerticalLayout();
         for (HumanSentence sent : entry.getHumanLayer().getHumanSentences()){
             HorizontalLayout sentenceFrame = createSentenceFrame(sent);
-            entryWindow.addComponent(sentenceFrame);
+            semanticFrame.addComponent(sentenceFrame);
         }
-        return entryWindow;
+        return semanticFrame;
     }
 
 

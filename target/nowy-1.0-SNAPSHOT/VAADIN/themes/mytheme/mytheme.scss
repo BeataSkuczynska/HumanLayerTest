@@ -45,14 +45,24 @@
   }
 
   .index {
-    width: 100%;
+    //width: 100%;
     color: white;
+    border: 1px solid yellow;
   }
 
 
   .v-grid-cell{
     background: #156ab3 !important;
   }
+
+  .index-letter{
+    color: white;
+    font-family: "Myriad Pro";
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+  }
+
 
 
 
@@ -61,10 +71,10 @@
   }
 
   .index-panel {
-    //align-items: center;
-    width: 100%;
-    height: 100%;
     font-family: "Myriad Pro";
+    border: 1px solid greenyellow;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
 
   }
 
@@ -145,11 +155,11 @@
   }
 
   .search-field {
-    width: 300px;
+    //width: 300px;
   }
 
   .search-button {
-    width: 75px;
+    //width: 75px;
     text-align: center;
     background: #156ab3 !important;
     color: white !important;
@@ -157,7 +167,8 @@
   .search-package {
     margin-top: 3px;
     margin-bottom: 3px;
-    width: 375px;
+    border: 1px solid lightseagreen;
+    //width: 375px;
   }
 
   .sentence{

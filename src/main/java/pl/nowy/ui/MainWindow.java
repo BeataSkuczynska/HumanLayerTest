@@ -10,7 +10,6 @@ import java.util.List;
 import javax.xml.bind.JAXBException;
 
 import static com.vaadin.ui.Alignment.TOP_LEFT;
-import static com.vaadin.ui.Alignment.TOP_RIGHT;
 
 /**
  * Created by Kasia on 09.06.2017.
@@ -19,7 +18,7 @@ public class MainWindow extends HorizontalLayout {
 
     private TopPanel topPanel;
 
-    private EntryWindowFactory factory = new EntryWindowFactory();
+    private EntryFrameFactory factory = new EntryFrameFactory();
     private EntryHolder entryHolder;
     private LeftPanel leftPanel;
     private VerticalLayout mainPanel;
@@ -28,22 +27,8 @@ public class MainWindow extends HorizontalLayout {
 
     public MainWindow() throws JAXBException {
 
-        setMargin(new MarginInfo(false, false, false, false));
+        setMargin(new MarginInfo(false, false, true, false));
 
-        topPanel = new TopPanel();
-        topPanel.setSizeFull();
-
-//        topPanel.getSearchPanel().getSearchButton().addClickListener(event ->
-//            {searchEntryWindow(topPanel.getSearchPanel().getSearchField().getValue());
-//            topPanel.getSearchPanel().getSearchField().setValue("");});
-
-        topPanel.getAboutButton().addClickListener(event ->
-            {entryHolder.removeAllComponents();
-            entryHolder.addComponent(topPanel.getAboutInformation());});
-
-        topPanel.getGuideButton().addClickListener(event ->
-            {entryHolder.removeAllComponents();
-            entryHolder.addComponent(topPanel.getGuideInformation());});
 
         mainPanel = new VerticalLayout();
         mainPanel.addStyleName("main-panel");
@@ -55,28 +40,50 @@ public class MainWindow extends HorizontalLayout {
         leftPanel.getIndexPanel().getGrid().addItemClickListener(event ->
                 changeEntryWindow(event.getItem()));
 
-        mainPanel.setSizeFull();
+        topPanel = new TopPanel();
+        topPanel.setSizeFull();
+
+        leftPanel.getSearchPanel().getSearchButton().addClickListener(event ->
+        {searchEntryWindow(leftPanel.getSearchPanel().getSearchField().getValue());
+            topPanel.getSearchPanel().getSearchField().setValue("");});
+
+        topPanel.getAboutButton().addClickListener(event ->
+        {entryHolder.removeAllComponents();
+            entryHolder.addComponent(topPanel.getAboutInformation());});
+
+        topPanel.getGuideButton().addClickListener(event ->
+        {entryHolder.removeAllComponents();
+            entryHolder.addComponent(topPanel.getGuideInformation());});
+
+
+        mainPanel.addComponent(topPanel);
         mainPanel.addComponent(entryHolder);
 
-        //mainPanel.setExpandRatio(entryHolder, 3f);
-        //mainPanel.setExpandRatio(indexPanel, 2f);
+        entryHolder.setSizeFull();
+
+        leftPanel.setSizeFull();
+        mainPanel.setSizeFull();
+
 
         mainPanel.setComponentAlignment(entryHolder, TOP_LEFT);
         //mainPanel.setComponentAlignment(indexPanel, TOP_RIGHT);
 
-        mainPanel.addComponent(topPanel);
         addComponent(leftPanel);
         addComponent(mainPanel);
 
-        setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
-//        setComponentAlignment(topPanel, Alignment.TOP_CENTER);
+        setExpandRatio(leftPanel, 1f);
+        setExpandRatio(mainPanel, 3f);
+
+        //setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
+
+        setSizeFull();
     }
 
 
 
     public void changeEntryWindow(Entry entry){
         entryHolder.removeAllComponents();
-        EntryWindow ew = EntryWindowFactory.createEntryWindow(entry);
+        EntryFrame ew = EntryFrameFactory.createEntryFrame(entry);
         entryHolder.addComponent(ew);
         entryHolder.setComponentAlignment(ew, TOP_LEFT);
     }
