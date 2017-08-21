@@ -25,6 +25,9 @@
 //$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
 //$v-friendly-color: #2c9720;
 //$v-error-indicator-color: #ed473b;
+$v-focus-color: #eff1f6;
+$v-selection-color: #eff1f6;
+$v-selection-overlay-background-color: #fff;
 
 // For more information, see: https://vaadin.com/book/-/page/themes.valo.html
 // Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
@@ -53,10 +56,16 @@
     //border: 1px solid yellow;
   }
 
+  .v-grid-row-selected {.v-grid-cell {
+    color: #6B7C99;
+    background: #ffffff !important;
+  }}
+
 
   .v-grid-cell{
     background: #6B7C99 !important;
   }
+  
 
   .index-letter{
     color: white;
