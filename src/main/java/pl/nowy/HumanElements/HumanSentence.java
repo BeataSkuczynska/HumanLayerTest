@@ -13,7 +13,7 @@ public class HumanSentence {
     private Head head;
 
     @XmlElementWrapper(name="positions")
-    @XmlElement(name="position")
+    @XmlElement(name="human_position")
     private List<HumanPosition> positions;
 
     public Head getHead() {

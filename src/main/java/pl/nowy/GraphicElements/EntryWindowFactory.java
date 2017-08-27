@@ -28,15 +28,23 @@ public class EntryWindowFactory {
         HorizontalLayout sentenceFrame = new HorizontalLayout();
         sentenceFrame.setStyleName("sentence");
         for (HumanPosition position : sentence.getPositions()){
-            HumanPhrase phrase = position.getPhrases().get(0);
-            HorizontalLayout phraseFrame = new HorizontalLayout();
-            Label phraseLabel = new Label(phrase.getTextRepresentation());
-            phraseFrame.addComponent(phraseLabel);
-            phraseFrame.addStyleName("form");
-            sentenceFrame.addComponent(phraseFrame);
+            VerticalLayout phrasesFrame = new VerticalLayout();
+            for (HumanPhrase phrase : position.getPhrases()) {
+//            HumanPhrase phrase = position.getPhrases().get(0);
+                HorizontalLayout phraseFrame = new HorizontalLayout();
+                Label phraseLabel = new Label(phrase.getTextRepresentation());
+                phraseFrame.addComponent(phraseLabel);
+                phraseFrame.addStyleName("form");
+                phrasesFrame.addComponent(phraseFrame);
+            }
+            phrasesFrame.setMargin(false);
+            sentenceFrame.addComponent(phrasesFrame);
         }
+        VerticalLayout headFrame = new VerticalLayout();
+        headFrame.setMargin(false);
         Component headComponent = new Label(sentence.getHead().getTextRepresentation());
-        sentenceFrame.addComponent(headComponent, 1);
+        headFrame.addComponent(headComponent);
+        sentenceFrame.addComponent(headFrame, 1);
         return sentenceFrame;
     }
 }

@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.*;
 /**
  * Created by Kasia on 05.07.2017.
  */
-@XmlRootElement(name = "human_phrase")
+@XmlRootElement(name = "human_instance")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class HumanPhrase {
 

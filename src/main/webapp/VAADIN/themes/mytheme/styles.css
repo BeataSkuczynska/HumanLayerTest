@@ -12575,17 +12575,19 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .about-Information-TextArea {
-	width: 400px;
+	border: 1px dotted white;
+	width: 700px;
 	text-align: center;
 	font-family: "Myriad Pro";
-	font-size: 27px;
+	font-size: 25px;
 }
 
 .mytheme .guide-information-TextArea {
-	width: 300px;
+	border: 1px dotted white;
+	width: 700px;
 	text-align: center;
 	font-family: "Myriad Pro";
-	font-size: 27px;
+	font-size: 25px;
 }
 
 .mytheme .search-field {

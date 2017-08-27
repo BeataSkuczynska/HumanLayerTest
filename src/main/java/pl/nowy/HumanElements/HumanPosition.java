@@ -6,12 +6,12 @@ import java.util.List;
 /**
  * Created by Kasia on 05.07.2017.
  */
-@XmlRootElement(name = "position")
+@XmlRootElement(name = "human_position")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class HumanPosition {
 
-    @XmlElementWrapper(name="human_phrases")
-    @XmlElement(name="human_phrase")
+    @XmlElementWrapper(name="human_instances")
+    @XmlElement(name="human_instance")
     private List<HumanPhrase> phrases;
 
     public List<HumanPhrase> getPhrases() {
