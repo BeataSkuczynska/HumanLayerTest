@@ -12574,18 +12574,20 @@ div.v-layout.v-horizontal.v-widget {
 	background: greenyellow;
 }
 
-.mytheme .about-Information-TextArea {
+.mytheme .about-information-TextArea {
 	border: 1px dotted white;
-	width: 700px;
-	text-align: center;
+	width: 730px;
+	height: 100%;
+	text-align: left;
 	font-family: "Myriad Pro";
 	font-size: 25px;
 }
 
 .mytheme .guide-information-TextArea {
 	border: 1px dotted white;
-	width: 700px;
-	text-align: center;
+	width: 730px;
+	height: 100%;
+	text-align: left;
 	font-family: "Myriad Pro";
 	font-size: 25px;
 }
